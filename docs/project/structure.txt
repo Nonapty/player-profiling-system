@@ -1,0 +1,48 @@
+player-profiling-system/
+│
+├── README.md
+├── .gitignore
+│
+├── backend/
+│   └── player-profiling-api/
+│       ├── README.md
+│       ├── main.py
+│       ├── api_main.py
+│       ├── requirements.txt
+│       ├── Dockerfile
+│       ├── core/
+│       ├── data/
+│       ├── schemas/
+│       ├── services/
+│       └── utils/
+│
+├── frontend/
+│   └── player-profiling-dashboard/
+│       └── README.md
+│
+├── data/
+│   ├── README.md
+│   ├── raw/
+│   └── processed/
+│
+├── models/
+│   ├── README.md
+│   ├── feature_engineering/
+│   └── ml_analytics/
+│
+├── deployment/
+│   ├── README.md
+│   └── docker-compose.yml
+│
+└── docs/
+    ├── project/
+    │   ├── VR.md
+    │   ├── 分工.md
+    │   ├── Data Contract Table.md
+    │   ├── api.yaml
+    │   └── structure.txt
+    └── engineering/
+        ├── DEPLOYMENT.md
+        ├── E_BLOCK_INTEGRATION.md
+        ├── GITHUB_GUIDE.md
+        └── PERFORMANCE_OPTIMIZATION.md

@@ -1,0 +1,367 @@
+openapi: 3.0.0
+info:
+  title: Player Profiling System API
+  version: 1.0.0
+  description: Industrial-grade API for player analytics, profiling, similarity, and modeling.
+
+servers:
+  - url: /api/v1
+
+security:
+  - bearerAuth: []
+
+paths:
+
+  # =========================
+  # Player Core Resource
+  # =========================
+  /players/{player_id}:
+    get:
+      tags: [Player]
+      summary: 获取球员基础信息与统计数据
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Player"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # =========================
+  # Feature Engineering
+  # =========================
+  /players/{player_id}/features:
+    get:
+      tags: [Model]
+      summary: 获取球员特征向量
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_FeatureVector"
+
+  /players/{player_id}/embedding:
+    get:
+      tags: [Model]
+      summary: 获取球员嵌入向量（风格空间）
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Embedding"
+
+  # =========================
+  # Clustering
+  # =========================
+  /players/{player_id}/cluster:
+    get:
+      tags: [Model]
+      summary: 获取球员风格聚类结果
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Cluster"
+
+  # =========================
+  # Similarity (Top-K)
+  # =========================
+  /players/{player_id}/similarity:
+    get:
+      tags: [Similarity]
+      summary: 获取相似球员列表
+      parameters:
+        - name: top_k
+          in: query
+          schema:
+            type: integer
+            default: 5
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_SimilarPlayers"
+
+  # =========================
+  # Trend Analysis
+  # =========================
+  /players/{player_id}/trend:
+    get:
+      tags: [Trend]
+      summary: 获取球员表现趋势
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Trend"
+
+  # =========================
+  # Explanation (XAI)
+  # =========================
+  /players/{player_id}/explanation:
+    get:
+      tags: [Explainability]
+      summary: 获取评分可解释性分析
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Explanation"
+
+  # =========================
+  # Comparison
+  # =========================
+  /players/compare:
+    get:
+      tags: [Comparison]
+      summary: 比较两名球员
+      parameters:
+        - name: player1
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: player2
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse_Comparison"
+
+# =========================
+# Components
+# =========================
+components:
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  responses:
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiResponse_Error"
+
+  schemas:
+
+    # =====================
+    # Generic Wrapper
+    # =====================
+    ApiResponse_Generic:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 200
+        message:
+          type: string
+          example: success
+        data:
+          type: object
+
+    ApiResponse_Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          example: 404
+        message:
+          type: string
+          example: Not Found
+        data:
+          type: null
+
+    # =====================
+    # Player
+    # =====================
+    Player:
+      type: object
+      properties:
+        player_id:
+          type: string
+        season:
+          type: integer
+        stats:
+          type: object
+          properties:
+            points: { type: number }
+            assists: { type: number }
+            rebounds: { type: number }
+
+    ApiResponse_Player:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Player"
+
+    # =====================
+    # Feature Vector
+    # =====================
+    FeatureVector:
+      type: object
+      properties:
+        player_id:
+          type: string
+        vector:
+          type: array
+          items:
+            type: number
+
+    ApiResponse_FeatureVector:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/FeatureVector"
+
+    # =====================
+    # Embedding
+    # =====================
+    Embedding:
+      type: object
+      properties:
+        player_id:
+          type: string
+        embedding:
+          type: array
+          items:
+            type: number
+
+    ApiResponse_Embedding:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Embedding"
+
+    # =====================
+    # Cluster
+    # =====================
+    Cluster:
+      type: object
+      properties:
+        player_id:
+          type: string
+        cluster_id:
+          type: integer
+
+    ApiResponse_Cluster:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Cluster"
+
+    # =====================
+    # Similarity
+    # =====================
+    SimilarPlayers:
+      type: object
+      properties:
+        player_id:
+          type: string
+        similar_players:
+          type: array
+          items:
+            type: string
+
+    ApiResponse_SimilarPlayers:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/SimilarPlayers"
+
+    # =====================
+    # Trend
+    # =====================
+    Trend:
+      type: object
+      properties:
+        player_id:
+          type: string
+        values:
+          type: array
+          items:
+            type: number
+
+    ApiResponse_Trend:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Trend"
+
+    # =====================
+    # Explanation
+    # =====================
+    Explanation:
+      type: object
+      properties:
+        player_id:
+          type: string
+        explanation:
+          type: string
+
+    ApiResponse_Explanation:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Explanation"
+
+    # =====================
+    # Comparison
+    # =====================
+    Comparison:
+      type: object
+      properties:
+        player1:
+          type: string
+        player2:
+          type: string
+        diff:
+          type: object
+          properties:
+            points: { type: number }
+            assists: { type: number }
+
+    ApiResponse_Comparison:
+      allOf:
+        - $ref: "#/components/schemas/ApiResponse_Generic"
+        - type: object
+          properties:
+            data:
+              $ref: "#/components/schemas/Comparison"

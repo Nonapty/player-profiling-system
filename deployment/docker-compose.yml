@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      context: ../backend/player-profiling-api
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=Player Profiling System
+      - DATA_MODE=mock-first
