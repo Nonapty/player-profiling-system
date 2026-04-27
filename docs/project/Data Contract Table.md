@@ -10,6 +10,49 @@
 | stats.assists | float | 场均助攻 |
 | stats.rebounds | float | 场均篮板 |
 
+### 存放位置
+
+真实数据应放在整体项目根目录：
+
+```text
+data/processed/players.json
+```
+
+或：
+
+```text
+data/processed/players.csv
+```
+
+后端 API 会优先读取 `players.json`，其次读取 `players.csv`。如果两个文件都不存在，则使用后端 mock 数据。
+
+### JSON 示例
+
+```json
+{
+  "players": [
+    {
+      "player_id": "real_001",
+      "name": "Sample Star A",
+      "team": "Demo Team",
+      "season": 2024,
+      "stats": {
+        "points": 28.4,
+        "assists": 7.2,
+        "rebounds": 8.9
+      }
+    }
+  ]
+}
+```
+
+### CSV 示例
+
+```csv
+player_id,name,team,season,points,assists,rebounds
+real_001,Sample Star A,Demo Team,2024,28.4,7.2,8.9
+```
+
 ---
 
 ## 🧮 2. Feature Vector（特征工程输出）

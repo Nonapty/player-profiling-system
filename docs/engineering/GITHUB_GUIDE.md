@@ -42,6 +42,15 @@ git commit -m "描述本次修改"
 git push
 ```
 
+例如这次修改真实数据接入逻辑后，可以执行：
+
+```bash
+git status
+git add .
+git commit -m "Add real data loading support"
+git push
+```
+
 ## 5. 和组员协作
 
 组员第一次下载项目：
@@ -83,7 +92,40 @@ git push -u origin feature/你的模块名
 
 然后在 GitHub 页面发起 Pull Request。
 
-## 7. 常见问题
+## 7. 查看项目历史版本
+
+### 在命令行查看提交历史
+
+```bash
+git log --oneline
+```
+
+查看更详细历史：
+
+```bash
+git log
+```
+
+查看某次提交改了什么，把 `<commit_id>` 替换成 `git log --oneline` 里看到的编号：
+
+```bash
+git show <commit_id>
+```
+
+### 在 GitHub 网页查看历史
+
+1. 打开仓库主页
+2. 点击文件列表右上方的 `Commits`
+3. 可以看到每一次提交记录
+4. 点击某次 commit，可以查看这次修改了哪些文件
+
+### 查看某个文件的历史
+
+1. 在 GitHub 打开该文件
+2. 点击右上角 `History`
+3. 可以看到这个文件每次被修改的记录
+
+## 8. 常见问题
 
 ### 提示没有登录权限
 

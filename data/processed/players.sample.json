@@ -1,0 +1,26 @@
+{
+  "players": [
+    {
+      "player_id": "real_001",
+      "name": "Sample Star A",
+      "team": "Demo Team",
+      "season": 2024,
+      "stats": {
+        "points": 28.4,
+        "assists": 7.2,
+        "rebounds": 8.9
+      }
+    },
+    {
+      "player_id": "real_002",
+      "name": "Sample Star B",
+      "team": "Demo Club",
+      "season": 2024,
+      "stats": {
+        "points": 21.8,
+        "assists": 9.1,
+        "rebounds": 5.7
+      }
+    }
+  ]
+}

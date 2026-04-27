@@ -1,5 +1,6 @@
 from fastapi import HTTPException
 from services import player_service, ml_service
+from utils.data_switcher import DataSwitcher
 
 
 class IntegrationService:
@@ -30,7 +31,8 @@ class IntegrationService:
                 "data": "available",
                 "ml": "available",
                 "integration": "available"
-            }
+            },
+            "data_source": DataSwitcher.get_data_status()
         }
 
     def player(self, player_id: str):

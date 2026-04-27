@@ -41,6 +41,8 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/processed/*.sample.json
+!data/processed/*.sample.csv
 
 # Build artifacts
 dist/

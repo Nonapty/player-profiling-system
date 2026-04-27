@@ -36,6 +36,18 @@ A 组处理后的数据放在：
 data/processed/
 ```
 
+推荐文件名：
+
+```text
+data/processed/players.json
+```
+
+或：
+
+```text
+data/processed/players.csv
+```
+
 后端真实数据读取逻辑接入：
 
 ```text
@@ -117,3 +129,4 @@ frontend/player-profiling-dashboard/
 - 不存在的球员返回 404
 - 前端只依赖 `/api/v1` 下的接口
 - 新模型输出必须先更新 `docs/project/Data Contract Table.md`
+- 真实数据文件存在时，`/api/v1/health` 中 `data_source.active_source` 应为 `real`

@@ -1,5 +1,5 @@
 from data.mock_db import PLAYERS
-from data.real_db import get_player_from_real_db
+from data.real_db import get_player_from_real_db, load_real_players
 
 
 class DataSwitcher:
@@ -27,4 +27,13 @@ class DataSwitcher:
         return {
             "source": "none",
             "data": None
+        }
+
+    @staticmethod
+    def get_data_status():
+        real_players = load_real_players()
+        return {
+            "real_players": len(real_players),
+            "mock_players": len(PLAYERS),
+            "active_source": "real" if real_players else "mock"
         }

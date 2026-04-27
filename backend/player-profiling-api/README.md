@@ -28,3 +28,35 @@ uvicorn main:app --reload
 - AI/模型结果接入：`services/ml_service.py`
 - 统一联调层：`services/integration_service.py`
 - API 路由层：`api_main.py`
+
+## 真实数据读取规则
+
+后端会优先读取整体项目根目录下的真实数据：
+
+```text
+../../data/processed/players.json
+```
+
+如果不存在，则读取：
+
+```text
+../../data/processed/players.csv
+```
+
+如果真实数据文件都不存在，则 fallback 到：
+
+```text
+data/mock_db.py
+```
+
+临时指定其他数据文件时，可以使用环境变量：
+
+```bash
+PLAYERS_DATA_PATH=data/processed/players.sample.json uvicorn main:app --reload
+```
+
+健康检查接口会显示当前数据源状态：
+
+```text
+GET /api/v1/health
+```
