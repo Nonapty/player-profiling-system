@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>球星画像可视化</title>
-    <link rel="stylesheet" href="/static-dashboard/styles.css">
+    <link rel="stylesheet" href="/static-dashboard/styles.css?v=20260522-5">
   </head>
   <body>
     <div class="app-shell">
@@ -19,15 +19,21 @@
 
         <label class="field-label" for="playerSearch">分析球员</label>
         <div class="combo" id="playerCombo">
-          <input id="playerSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入球员名、球队或位置">
+          <input id="playerSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入球员名、球队、中文/英文位置">
           <div id="playerOptions" class="combo-options" role="listbox"></div>
         </div>
 
         <label class="field-label" for="compareSearch">全局对比对象</label>
         <div class="combo" id="compareCombo">
-          <input id="compareSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入对比球员">
+          <input id="compareSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入球员名、球队、中文/英文位置">
           <div id="compareOptions" class="combo-options" role="listbox"></div>
         </div>
+
+        <label class="compare-toggle">
+          <input id="overlayToggle" type="checkbox" checked>
+          <span></span>
+          <strong>图中叠加对比</strong>
+        </label>
 
         <nav class="nav-list" aria-label="页面区块">
           <a href="#overview">总览</a>
@@ -143,6 +149,6 @@
       </main>
     </div>
 
-    <script src="/static-dashboard/app.js"></script>
+    <script src="/static-dashboard/app.js?v=20260522-5"></script>
   </body>
 </html>

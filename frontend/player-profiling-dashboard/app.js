@@ -7,6 +7,7 @@ const els = {
   compareSearch: document.getElementById("compareSearch"),
   playerOptions: document.getElementById("playerOptions"),
   compareOptions: document.getElementById("compareOptions"),
+  overlayToggle: document.getElementById("overlayToggle"),
   playerName: document.getElementById("playerName"),
   playerMeta: document.getElementById("playerMeta"),
   scoreValue: document.getElementById("scoreValue"),
@@ -34,6 +35,7 @@ let currentCompare = null;
 let currentCompareDashboard = null;
 let selectedPlayerId = "";
 let selectedCompareId = "";
+let showOverlayCompare = true;
 
 const labelMap = {
   Scoring: "得分",
@@ -101,6 +103,14 @@ function zhPosition(position) {
   return positionMap[position] || position || "球员";
 }
 
+function positionLabel(position) {
+  if (!position) {
+    return "未知位置";
+  }
+  const translated = zhPosition(position);
+  return translated === position ? translated : `${translated} ${position}`;
+}
+
 function zhLabel(label) {
   return labelMap[label] || label;
 }
@@ -142,8 +152,7 @@ function filteredPlayers(kind, query) {
   const normalized = query.trim().toLowerCase();
   return players
     .filter((player) => kind !== "compare" || player.player_id !== selectedPlayerId)
-    .filter((player) => !normalized || searchableText(player).includes(normalized))
-    .slice(0, 12);
+    .filter((player) => !normalized || searchableText(player).includes(normalized));
 }
 
 function renderComboOptions(kind, query = "") {
@@ -156,17 +165,22 @@ function renderComboOptions(kind, query = "") {
     return;
   }
 
-  optionsEl.innerHTML = matches.map((player) => `
-    <button class="combo-option ${player.player_id === selectedId ? "selected" : ""}" type="button" data-player-id="${player.player_id}">
-      <strong>${playerLabel(player)}</strong>
-      <span>${player.team || "未知球队"} · ${zhPosition(player.position)}</span>
-    </button>
-  `).join("");
+  optionsEl.innerHTML = `
+    <div class="combo-count">共 ${matches.length} 名匹配球员</div>
+    ${matches.map((player) => `
+      <button class="combo-option ${player.player_id === selectedId ? "selected" : ""}" type="button" data-player-id="${player.player_id}">
+        <strong>${playerLabel(player)}</strong>
+        <span>${player.team || "未知球队"} · ${positionLabel(player.position)}</span>
+      </button>
+    `).join("")}
+  `;
 }
 
 function openCombo(kind) {
   const combo = kind === "player" ? els.playerCombo : els.compareCombo;
   const input = kind === "player" ? els.playerSearch : els.compareSearch;
+  const otherCombo = kind === "player" ? els.compareCombo : els.playerCombo;
+  otherCombo.classList.remove("open");
   combo.classList.add("open");
   renderComboOptions(kind, input.value);
 }
@@ -232,8 +246,9 @@ function isFocused(panelId) {
 }
 
 function renderVisuals(dashboard, compare, compareDashboard) {
-  renderRadar(dashboard.features, dashboard.player.stats, dashboard.player, compareDashboard);
-  renderTrend(dashboard.trend, compareDashboard?.trend, dashboard.player, compareDashboard?.player);
+  const overlayDashboard = showOverlayCompare ? compareDashboard : null;
+  renderRadar(dashboard.features, dashboard.player.stats, dashboard.player, overlayDashboard);
+  renderTrend(dashboard.trend, overlayDashboard?.trend, dashboard.player, overlayDashboard?.player);
   renderSpace(dashboard.style_space, dashboard.player.player_id);
   renderSimilar(dashboard.similarity, dashboard.player);
   renderExplanation(dashboard.explanation);
@@ -245,7 +260,7 @@ function renderOverview(data) {
   const stats = player.stats;
 
   els.playerName.textContent = playerLabel(player);
-  els.playerMeta.textContent = `${player.team || "未知球队"} · ${zhPosition(player.position)} · ${player.season} · ${zhStyle(player.style)}`;
+  els.playerMeta.textContent = `${player.team || "未知球队"} · ${positionLabel(player.position)} · ${player.season} · ${zhStyle(player.style)}`;
   els.pointsMetric.textContent = stats.points.toFixed(1);
   els.assistsMetric.textContent = stats.assists.toFixed(1);
   els.reboundsMetric.textContent = stats.rebounds.toFixed(1);
@@ -332,7 +347,6 @@ function renderTrend(trend, compareTrend, player, comparePlayer) {
   const width = focused ? 580 : 520;
   const height = focused ? 340 : 330;
   const pad = 36;
-  const barBase = height - 34;
   const values = trend.values;
   const compareValues = compareTrend?.values || [];
   const allValues = [...values, ...compareValues];
@@ -346,7 +360,8 @@ function renderTrend(trend, compareTrend, player, comparePlayer) {
   const peakLabelY = Math.max(34, scaleY(peak) - 24);
   const path = values.map((value, index) => `${index === 0 ? "M" : "L"} ${scaleX(index)} ${scaleY(value)}`).join(" ");
   const comparePath = compareValues.map((value, index) => `${index === 0 ? "M" : "L"} ${scaleX(index)} ${scaleY(value)}`).join(" ");
-  const area = `${path} L ${scaleX(values.length - 1)} ${barBase - 36} L ${scaleX(0)} ${barBase - 36} Z`;
+  const areaBase = height - 70;
+  const area = `${path} L ${scaleX(values.length - 1)} ${areaBase} L ${scaleX(0)} ${areaBase} Z`;
 
   els.trendChart.innerHTML = `
     <svg class="trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="近期状态趋势图">
@@ -371,14 +386,13 @@ function renderTrend(trend, compareTrend, player, comparePlayer) {
       `).join("")}
       ${values.map((value, index) => `
         <circle cx="${scaleX(index)}" cy="${scaleY(value)}" r="5" fill="#ffffff" stroke="#d85c47" stroke-width="3" />
-        <rect x="${scaleX(index) - 10}" y="${barBase - (value - min) * 8}" width="20" height="${(value - min) * 8}" rx="5" fill="rgba(25, 123, 122, 0.22)" />
         ${focused && index !== peakIndex ? `<text class="point-value-label" x="${scaleX(index)}" y="${scaleY(value) - 14}" text-anchor="middle">${value.toFixed(1)}</text>` : ""}
         <text class="tick-label" x="${scaleX(index)}" y="${height - 12}" text-anchor="middle">${trend.labels[index]}</text>
       `).join("")}
       <circle cx="${scaleX(peakIndex)}" cy="${scaleY(peak)}" r="10" fill="none" stroke="#d79a2b" stroke-width="3" />
       <text class="trend-peak" x="${scaleX(peakIndex)}" y="${peakLabelY}" text-anchor="middle">峰值 ${peak.toFixed(1)}</text>
       <text class="tick-label" x="${pad}" y="25">高 ${max.toFixed(1)}</text>
-      <text class="tick-label" x="${pad}" y="${barBase + 10}">低 ${min.toFixed(1)}</text>
+      <text class="tick-label" x="${pad}" y="${height - 43}">低 ${min.toFixed(1)}</text>
       ${compareValues.length ? `
         <g class="chart-legend">
           <circle cx="${width - 142}" cy="${height - 56}" r="4" fill="#d85c47" />
@@ -651,6 +665,12 @@ async function init() {
 
     initCombo("player");
     initCombo("compare");
+    els.overlayToggle.addEventListener("change", () => {
+      showOverlayCompare = els.overlayToggle.checked;
+      if (currentDashboard && currentCompare) {
+        renderVisuals(currentDashboard, currentCompare, currentCompareDashboard);
+      }
+    });
     document.addEventListener("click", (event) => {
       if (!event.target.closest(".combo")) {
         closeCombos();
