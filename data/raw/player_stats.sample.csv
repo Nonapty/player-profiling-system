@@ -1,0 +1,7 @@
+player_id,name,team,position,age,season,points,assists,rebounds,minutes,turnovers
+123,LeBron James,Los Angeles Lakers,Forward,39,2024,25.3,8.3,7.3,35.1,3.5
+456,Stephen Curry,Golden State Warriors,Guard,36,2024,26.4,5.1,4.5,32.7,2.8
+789,Nikola Jokic,Denver Nuggets,Center,29,2024,26.4,9.0,12.4,34.6,3.0
+101,Giannis Antetokounmpo,Milwaukee Bucks,Forward,29,2024,30.4,6.5,11.5,35.2,3.4
+202,Luka Doncic,Dallas Mavericks,Guard,25,2024,33.9,9.8,9.2,37.5,4.0
+303,Jayson Tatum,Boston Celtics,Forward,26,2024,26.9,4.9,8.1,35.7,2.5

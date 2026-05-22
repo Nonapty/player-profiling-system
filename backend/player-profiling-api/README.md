@@ -19,7 +19,7 @@ uvicorn main:app --reload
 | `GET /api/v1/players/{player_id}` | 球员基础数据 |
 | `GET /api/v1/players/{player_id}/profile` | 球员完整画像聚合数据 |
 | `GET /api/v1/players/{player_id}/dashboard` | 前端 Dashboard 聚合数据 |
-| `GET /api/v1/players/compare?player1=123&player2=456` | 球员对比 |
+| `GET /api/v1/players/compare?player1=curryst01&player2=gilgesh01` | 球员对比 |
 
 ## 模块接入点
 

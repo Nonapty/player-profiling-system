@@ -56,6 +56,6 @@ GET /api/v1/players/{player_id}/profile
 
 ```bash
 curl -s http://127.0.0.1:8000/api/v1/health
-curl -s http://127.0.0.1:8000/api/v1/players/123/profile
-curl -s "http://127.0.0.1:8000/api/v1/players/compare?player1=123&player2=456"
+curl -s http://127.0.0.1:8000/api/v1/players/curryst01/profile
+curl -s "http://127.0.0.1:8000/api/v1/players/compare?player1=curryst01&player2=gilgesh01"
 ```

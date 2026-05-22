@@ -1,5 +1,9 @@
+from pathlib import Path
+
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from core.config import settings
 from services.integration_service import IntegrationService
@@ -19,6 +23,11 @@ app.add_middleware(
 )
 
 service = IntegrationService()
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+FRONTEND_DIR = PROJECT_ROOT / "frontend" / "player-profiling-dashboard"
+
+if FRONTEND_DIR.exists():
+    app.mount("/static-dashboard", StaticFiles(directory=str(FRONTEND_DIR)), name="static-dashboard")
 
 
 @app.get("/")
@@ -26,8 +35,14 @@ def root():
     return service.ok({
         "service": settings.app_name,
         "docs": "/docs",
-        "health": f"{settings.api_prefix}/health"
+        "health": f"{settings.api_prefix}/health",
+        "dashboard": "/dashboard"
     })
+
+
+@app.get("/dashboard")
+def dashboard_page():
+    return FileResponse(FRONTEND_DIR / "index.html")
 
 
 @app.get("/api/v1/health")
@@ -38,6 +53,16 @@ def health():
 @app.get("/api/v1/players/compare")
 def compare(player1: str, player2: str):
     return service.ok(service.compare(player1, player2))
+
+
+@app.get("/api/v1/players")
+def players():
+    return service.ok(service.players())
+
+
+@app.get("/api/v1/style-space")
+def style_space():
+    return service.ok(service.style_space())
 
 
 @app.get("/api/v1/players/{player_id}")

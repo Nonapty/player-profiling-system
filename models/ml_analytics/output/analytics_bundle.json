@@ -1,0 +1,3418 @@
+{
+  "summary": {
+    "player_count": 100,
+    "embedding_dim": 2,
+    "cluster_count": 3,
+    "similarity_top_k": 3
+  },
+  "embeddings": [
+    {
+      "player_id": "adebaba01",
+      "embedding": [
+        2.402135,
+        0.292326
+      ]
+    },
+    {
+      "player_id": "antetgi01",
+      "embedding": [
+        5.441426,
+        2.242674
+      ]
+    },
+    {
+      "player_id": "anunoog01",
+      "embedding": [
+        -0.113265,
+        -0.458443
+      ]
+    },
+    {
+      "player_id": "avdijde01",
+      "embedding": [
+        0.780004,
+        -0.821157
+      ]
+    },
+    {
+      "player_id": "ballla01",
+      "embedding": [
+        -1.49524,
+        1.716656
+      ]
+    },
+    {
+      "player_id": "banchpa01",
+      "embedding": [
+        1.025217,
+        0.778564
+      ]
+    },
+    {
+      "player_id": "banede01",
+      "embedding": [
+        -0.682433,
+        0.515716
+      ]
+    },
+    {
+      "player_id": "barnesc01",
+      "embedding": [
+        1.400539,
+        0.569835
+      ]
+    },
+    {
+      "player_id": "barrerj01",
+      "embedding": [
+        0.739446,
+        -0.333076
+      ]
+    },
+    {
+      "player_id": "bealbr01",
+      "embedding": [
+        -1.314909,
+        -0.960899
+      ]
+    },
+    {
+      "player_id": "beaslma01",
+      "embedding": [
+        -1.881288,
+        -3.194637
+      ]
+    },
+    {
+      "player_id": "bookede01",
+      "embedding": [
+        -1.503982,
+        2.23504
+      ]
+    },
+    {
+      "player_id": "braunch01",
+      "embedding": [
+        0.19231,
+        -1.567067
+      ]
+    },
+    {
+      "player_id": "bridgmi01",
+      "embedding": [
+        -0.883356,
+        -0.636007
+      ]
+    },
+    {
+      "player_id": "bridgmi02",
+      "embedding": [
+        0.407828,
+        -0.480138
+      ]
+    },
+    {
+      "player_id": "brownja02",
+      "embedding": [
+        0.141482,
+        0.562506
+      ]
+    },
+    {
+      "player_id": "brunsja01",
+      "embedding": [
+        -1.95555,
+        1.547322
+      ]
+    },
+    {
+      "player_id": "butleji01",
+      "embedding": [
+        0.32466,
+        -0.525728
+      ]
+    },
+    {
+      "player_id": "castlst01",
+      "embedding": [
+        -1.056969,
+        -2.507608
+      ]
+    },
+    {
+      "player_id": "clarkjo01",
+      "embedding": [
+        -2.094193,
+        -2.132775
+      ]
+    },
+    {
+      "player_id": "collijo01",
+      "embedding": [
+        1.80046,
+        -0.837826
+      ]
+    },
+    {
+      "player_id": "cunnica01",
+      "embedding": [
+        -0.398573,
+        3.356846
+      ]
+    },
+    {
+      "player_id": "curryst01",
+      "embedding": [
+        -1.8501,
+        1.808426
+      ]
+    },
+    {
+      "player_id": "davisan02",
+      "embedding": [
+        4.635898,
+        0.906815
+      ]
+    },
+    {
+      "player_id": "derozde01",
+      "embedding": [
+        -1.006963,
+        0.128901
+      ]
+    },
+    {
+      "player_id": "doncilu01",
+      "embedding": [
+        0.287226,
+        3.721247
+      ]
+    },
+    {
+      "player_id": "duranke01",
+      "embedding": [
+        0.406362,
+        1.973562
+      ]
+    },
+    {
+      "player_id": "edwaran01",
+      "embedding": [
+        -0.742119,
+        2.168103
+      ]
+    },
+    {
+      "player_id": "embiijo01",
+      "embedding": [
+        1.230163,
+        0.452185
+      ]
+    },
+    {
+      "player_id": "foxde01",
+      "embedding": [
+        -0.856991,
+        1.950435
+      ]
+    },
+    {
+      "player_id": "garlada01",
+      "embedding": [
+        -2.40178,
+        0.447223
+      ]
+    },
+    {
+      "player_id": "georgke01",
+      "embedding": [
+        -2.219109,
+        -0.72938
+      ]
+    },
+    {
+      "player_id": "georgpa01",
+      "embedding": [
+        -0.834313,
+        0.428734
+      ]
+    },
+    {
+      "player_id": "gilgesh01",
+      "embedding": [
+        -0.48111,
+        3.043567
+      ]
+    },
+    {
+      "player_id": "gordoaa01",
+      "embedding": [
+        -0.117112,
+        -2.825617
+      ]
+    },
+    {
+      "player_id": "greenja05",
+      "embedding": [
+        -1.423296,
+        -0.272548
+      ]
+    },
+    {
+      "player_id": "grimequ01",
+      "embedding": [
+        -1.030855,
+        -2.43175
+      ]
+    },
+    {
+      "player_id": "halibty01",
+      "embedding": [
+        -1.733966,
+        0.872981
+      ]
+    },
+    {
+      "player_id": "hardeja01",
+      "embedding": [
+        -1.168709,
+        3.857031
+      ]
+    },
+    {
+      "player_id": "herroty01",
+      "embedding": [
+        -1.195985,
+        1.335067
+      ]
+    },
+    {
+      "player_id": "holmgch01",
+      "embedding": [
+        2.32972,
+        -2.864893
+      ]
+    },
+    {
+      "player_id": "huntede01",
+      "embedding": [
+        -1.302239,
+        -2.82532
+      ]
+    },
+    {
+      "player_id": "ingrabr01",
+      "embedding": [
+        -0.482802,
+        0.981299
+      ]
+    },
+    {
+      "player_id": "irvinky01",
+      "embedding": [
+        -1.153653,
+        1.539358
+      ]
+    },
+    {
+      "player_id": "iveyja01",
+      "embedding": [
+        -0.949262,
+        -1.317441
+      ]
+    },
+    {
+      "player_id": "jacksja02",
+      "embedding": [
+        0.784613,
+        -0.893152
+      ]
+    },
+    {
+      "player_id": "jamesle01",
+      "embedding": [
+        1.09494,
+        3.057539
+      ]
+    },
+    {
+      "player_id": "johnsca02",
+      "embedding": [
+        -1.145375,
+        -1.056441
+      ]
+    },
+    {
+      "player_id": "johnsja05",
+      "embedding": [
+        2.668231,
+        1.170885
+      ]
+    },
+    {
+      "player_id": "jokicni01",
+      "embedding": [
+        3.962907,
+        5.029346
+      ]
+    },
+    {
+      "player_id": "kuminjo01",
+      "embedding": [
+        0.04342,
+        -3.975262
+      ]
+    },
+    {
+      "player_id": "kuzmaky01",
+      "embedding": [
+        0.368881,
+        -2.532428
+      ]
+    },
+    {
+      "player_id": "lavinza01",
+      "embedding": [
+        -1.289991,
+        0.904449
+      ]
+    },
+    {
+      "player_id": "leonaka01",
+      "embedding": [
+        -0.04257,
+        0.089616
+      ]
+    },
+    {
+      "player_id": "lillada01",
+      "embedding": [
+        -1.817241,
+        2.588116
+      ]
+    },
+    {
+      "player_id": "markkla01",
+      "embedding": [
+        -0.37805,
+        -1.91906
+      ]
+    },
+    {
+      "player_id": "mathube01",
+      "embedding": [
+        -0.37606,
+        -2.314102
+      ]
+    },
+    {
+      "player_id": "maxeyty01",
+      "embedding": [
+        -2.161413,
+        2.436336
+      ]
+    },
+    {
+      "player_id": "mccaija01",
+      "embedding": [
+        -2.518571,
+        -3.379959
+      ]
+    },
+    {
+      "player_id": "mccolcj01",
+      "embedding": [
+        -1.069642,
+        -0.708046
+      ]
+    },
+    {
+      "player_id": "millebr02",
+      "embedding": [
+        -1.11825,
+        0.039266
+      ]
+    },
+    {
+      "player_id": "mitchdo01",
+      "embedding": [
+        -1.401,
+        0.517426
+      ]
+    },
+    {
+      "player_id": "mobleev01",
+      "embedding": [
+        3.390315,
+        -1.248669
+      ]
+    },
+    {
+      "player_id": "monkma01",
+      "embedding": [
+        -1.653987,
+        -0.388454
+      ]
+    },
+    {
+      "player_id": "moranja01",
+      "embedding": [
+        -1.449097,
+        1.32497
+      ]
+    },
+    {
+      "player_id": "murphtr02",
+      "embedding": [
+        -0.701569,
+        -0.037565
+      ]
+    },
+    {
+      "player_id": "murrade01",
+      "embedding": [
+        -0.995596,
+        1.933992
+      ]
+    },
+    {
+      "player_id": "murraja01",
+      "embedding": [
+        -1.644965,
+        1.308569
+      ]
+    },
+    {
+      "player_id": "oubreke01",
+      "embedding": [
+        0.736552,
+        -1.351097
+      ]
+    },
+    {
+      "player_id": "poolejo01",
+      "embedding": [
+        -2.398143,
+        0.109191
+      ]
+    },
+    {
+      "player_id": "portemi01",
+      "embedding": [
+        1.123417,
+        -1.651982
+      ]
+    },
+    {
+      "player_id": "porzikr01",
+      "embedding": [
+        1.15585,
+        -2.108612
+      ]
+    },
+    {
+      "player_id": "powelno01",
+      "embedding": [
+        -1.713231,
+        -0.575343
+      ]
+    },
+    {
+      "player_id": "quickim01",
+      "embedding": [
+        -2.391235,
+        -1.639365
+      ]
+    },
+    {
+      "player_id": "randlju01",
+      "embedding": [
+        0.855568,
+        -0.184079
+      ]
+    },
+    {
+      "player_id": "reaveau01",
+      "embedding": [
+        -1.474349,
+        0.850749
+      ]
+    },
+    {
+      "player_id": "sabondo01",
+      "embedding": [
+        5.134351,
+        1.101478
+      ]
+    },
+    {
+      "player_id": "sengual01",
+      "embedding": [
+        3.839778,
+        -0.318995
+      ]
+    },
+    {
+      "player_id": "sextoco01",
+      "embedding": [
+        -2.078951,
+        -1.414747
+      ]
+    },
+    {
+      "player_id": "sharpsh01",
+      "embedding": [
+        -0.885647,
+        -1.435613
+      ]
+    },
+    {
+      "player_id": "siakapa01",
+      "embedding": [
+        1.253343,
+        -0.927437
+      ]
+    },
+    {
+      "player_id": "simonan01",
+      "embedding": [
+        -2.733566,
+        -0.402358
+      ]
+    },
+    {
+      "player_id": "suggsja01",
+      "embedding": [
+        -1.61601,
+        -0.753657
+      ]
+    },
+    {
+      "player_id": "tatumja01",
+      "embedding": [
+        0.867687,
+        2.437961
+      ]
+    },
+    {
+      "player_id": "thomaca02",
+      "embedding": [
+        -2.135725,
+        -0.641872
+      ]
+    },
+    {
+      "player_id": "townska01",
+      "embedding": [
+        3.841783,
+        1.502052
+      ]
+    },
+    {
+      "player_id": "turnemy01",
+      "embedding": [
+        1.43506,
+        -2.127846
+      ]
+    },
+    {
+      "player_id": "vassede01",
+      "embedding": [
+        -1.401985,
+        -1.603832
+      ]
+    },
+    {
+      "player_id": "vucevni01",
+      "embedding": [
+        2.724776,
+        -0.653159
+      ]
+    },
+    {
+      "player_id": "wagnefr01",
+      "embedding": [
+        -0.335042,
+        0.799939
+      ]
+    },
+    {
+      "player_id": "washipj01",
+      "embedding": [
+        1.339393,
+        -1.438103
+      ]
+    },
+    {
+      "player_id": "wembavi01",
+      "embedding": [
+        4.184129,
+        1.248655
+      ]
+    },
+    {
+      "player_id": "whiteco01",
+      "embedding": [
+        -2.103586,
+        0.083288
+      ]
+    },
+    {
+      "player_id": "whitede01",
+      "embedding": [
+        -0.953176,
+        -0.51552
+      ]
+    },
+    {
+      "player_id": "wiggian01",
+      "embedding": [
+        -0.263504,
+        -1.747182
+      ]
+    },
+    {
+      "player_id": "willija06",
+      "embedding": [
+        -0.347099,
+        0.575754
+      ]
+    },
+    {
+      "player_id": "willima07",
+      "embedding": [
+        5.14823,
+        -2.984614
+      ]
+    },
+    {
+      "player_id": "willizi01",
+      "embedding": [
+        2.914526,
+        -0.271488
+      ]
+    },
+    {
+      "player_id": "youngtr01",
+      "embedding": [
+        -2.685314,
+        4.076508
+      ]
+    },
+    {
+      "player_id": "zubaciv01",
+      "embedding": [
+        7.197432,
+        -1.696155
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "player_id": "adebaba01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "antetgi01",
+      "cluster_id": 1
+    },
+    {
+      "player_id": "anunoog01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "avdijde01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "ballla01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "banchpa01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "banede01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "barnesc01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "barrerj01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "bealbr01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "beaslma01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "bookede01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "braunch01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "bridgmi01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "bridgmi02",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "brownja02",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "brunsja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "butleji01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "castlst01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "clarkjo01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "collijo01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "cunnica01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "curryst01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "davisan02",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "derozde01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "doncilu01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "duranke01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "edwaran01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "embiijo01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "foxde01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "garlada01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "georgke01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "georgpa01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "gilgesh01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "gordoaa01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "greenja05",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "grimequ01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "halibty01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "hardeja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "herroty01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "holmgch01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "huntede01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "ingrabr01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "irvinky01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "iveyja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "jacksja02",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "jamesle01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "johnsca02",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "johnsja05",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "jokicni01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "kuminjo01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "kuzmaky01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "lavinza01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "leonaka01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "lillada01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "markkla01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "mathube01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "maxeyty01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "mccaija01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "mccolcj01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "millebr02",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "mitchdo01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "mobleev01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "monkma01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "moranja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "murphtr02",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "murrade01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "murraja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "oubreke01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "poolejo01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "portemi01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "porzikr01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "powelno01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "quickim01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "randlju01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "reaveau01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "sabondo01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "sengual01",
+      "cluster_id": 1
+    },
+    {
+      "player_id": "sextoco01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "sharpsh01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "siakapa01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "simonan01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "suggsja01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "tatumja01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "thomaca02",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "townska01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "turnemy01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "vassede01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "vucevni01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "wagnefr01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "washipj01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "wembavi01",
+      "cluster_id": 0
+    },
+    {
+      "player_id": "whiteco01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "whitede01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "wiggian01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "willija06",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "willima07",
+      "cluster_id": 1
+    },
+    {
+      "player_id": "willizi01",
+      "cluster_id": 1
+    },
+    {
+      "player_id": "youngtr01",
+      "cluster_id": 2
+    },
+    {
+      "player_id": "zubaciv01",
+      "cluster_id": 1
+    }
+  ],
+  "similarities": [
+    {
+      "player_id": "adebaba01",
+      "similar_players": [
+        "townska01",
+        "sengual01",
+        "sabondo01"
+      ]
+    },
+    {
+      "player_id": "antetgi01",
+      "similar_players": [
+        "davisan02",
+        "zubaciv01",
+        "willizi01"
+      ]
+    },
+    {
+      "player_id": "anunoog01",
+      "similar_players": [
+        "oubreke01",
+        "bridgmi01",
+        "murphtr02"
+      ]
+    },
+    {
+      "player_id": "avdijde01",
+      "similar_players": [
+        "washipj01",
+        "mathube01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "ballla01",
+      "similar_players": [
+        "moranja01",
+        "youngtr01",
+        "cunnica01"
+      ]
+    },
+    {
+      "player_id": "banchpa01",
+      "similar_players": [
+        "barrerj01",
+        "tatumja01",
+        "antetgi01"
+      ]
+    },
+    {
+      "player_id": "banede01",
+      "similar_players": [
+        "reaveau01",
+        "murraja01",
+        "garlada01"
+      ]
+    },
+    {
+      "player_id": "barnesc01",
+      "similar_players": [
+        "johnsja05",
+        "sengual01",
+        "adebaba01"
+      ]
+    },
+    {
+      "player_id": "barrerj01",
+      "similar_players": [
+        "banchpa01",
+        "kuzmaky01",
+        "brownja02"
+      ]
+    },
+    {
+      "player_id": "bealbr01",
+      "similar_players": [
+        "powelno01",
+        "mccolcj01",
+        "vassede01"
+      ]
+    },
+    {
+      "player_id": "beaslma01",
+      "similar_players": [
+        "grimequ01",
+        "vassede01",
+        "huntede01"
+      ]
+    },
+    {
+      "player_id": "bookede01",
+      "similar_players": [
+        "herroty01",
+        "brunsja01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "braunch01",
+      "similar_players": [
+        "portemi01",
+        "bridgmi01",
+        "anunoog01"
+      ]
+    },
+    {
+      "player_id": "bridgmi01",
+      "similar_players": [
+        "derozde01",
+        "anunoog01",
+        "whitede01"
+      ]
+    },
+    {
+      "player_id": "bridgmi02",
+      "similar_players": [
+        "markkla01",
+        "mathube01",
+        "murphtr02"
+      ]
+    },
+    {
+      "player_id": "brownja02",
+      "similar_players": [
+        "foxde01",
+        "wagnefr01",
+        "tatumja01"
+      ]
+    },
+    {
+      "player_id": "brunsja01",
+      "similar_players": [
+        "bookede01",
+        "herroty01",
+        "lavinza01"
+      ]
+    },
+    {
+      "player_id": "butleji01",
+      "similar_players": [
+        "oubreke01",
+        "leonaka01",
+        "derozde01"
+      ]
+    },
+    {
+      "player_id": "castlst01",
+      "similar_players": [
+        "grimequ01",
+        "sharpsh01",
+        "kuminjo01"
+      ]
+    },
+    {
+      "player_id": "clarkjo01",
+      "similar_players": [
+        "quickim01",
+        "mccaija01",
+        "sextoco01"
+      ]
+    },
+    {
+      "player_id": "collijo01",
+      "similar_players": [
+        "mobleev01",
+        "porzikr01",
+        "holmgch01"
+      ]
+    },
+    {
+      "player_id": "cunnica01",
+      "similar_players": [
+        "youngtr01",
+        "ballla01",
+        "edwaran01"
+      ]
+    },
+    {
+      "player_id": "curryst01",
+      "similar_players": [
+        "lillada01",
+        "irvinky01",
+        "hardeja01"
+      ]
+    },
+    {
+      "player_id": "davisan02",
+      "similar_players": [
+        "wembavi01",
+        "townska01",
+        "antetgi01"
+      ]
+    },
+    {
+      "player_id": "derozde01",
+      "similar_players": [
+        "bridgmi01",
+        "johnsca02",
+        "whitede01"
+      ]
+    },
+    {
+      "player_id": "doncilu01",
+      "similar_players": [
+        "foxde01",
+        "tatumja01",
+        "jokicni01"
+      ]
+    },
+    {
+      "player_id": "duranke01",
+      "similar_players": [
+        "jamesle01",
+        "lavinza01",
+        "curryst01"
+      ]
+    },
+    {
+      "player_id": "edwaran01",
+      "similar_players": [
+        "herroty01",
+        "cunnica01",
+        "gilgesh01"
+      ]
+    },
+    {
+      "player_id": "embiijo01",
+      "similar_players": [
+        "ingrabr01",
+        "collijo01",
+        "davisan02"
+      ]
+    },
+    {
+      "player_id": "foxde01",
+      "similar_players": [
+        "maxeyty01",
+        "murraja01",
+        "bookede01"
+      ]
+    },
+    {
+      "player_id": "garlada01",
+      "similar_players": [
+        "poolejo01",
+        "reaveau01",
+        "whiteco01"
+      ]
+    },
+    {
+      "player_id": "georgke01",
+      "similar_players": [
+        "monkma01",
+        "greenja05",
+        "simonan01"
+      ]
+    },
+    {
+      "player_id": "georgpa01",
+      "similar_players": [
+        "leonaka01",
+        "murrade01",
+        "oubreke01"
+      ]
+    },
+    {
+      "player_id": "gilgesh01",
+      "similar_players": [
+        "edwaran01",
+        "maxeyty01",
+        "foxde01"
+      ]
+    },
+    {
+      "player_id": "gordoaa01",
+      "similar_players": [
+        "huntede01",
+        "johnsca02",
+        "wiggian01"
+      ]
+    },
+    {
+      "player_id": "greenja05",
+      "similar_players": [
+        "sharpsh01",
+        "whiteco01",
+        "georgke01"
+      ]
+    },
+    {
+      "player_id": "grimequ01",
+      "similar_players": [
+        "beaslma01",
+        "castlst01",
+        "vassede01"
+      ]
+    },
+    {
+      "player_id": "halibty01",
+      "similar_players": [
+        "murraja01",
+        "garlada01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "hardeja01",
+      "similar_players": [
+        "youngtr01",
+        "lillada01",
+        "curryst01"
+      ]
+    },
+    {
+      "player_id": "herroty01",
+      "similar_players": [
+        "reaveau01",
+        "bookede01",
+        "whiteco01"
+      ]
+    },
+    {
+      "player_id": "holmgch01",
+      "similar_players": [
+        "porzikr01",
+        "turnemy01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "huntede01",
+      "similar_players": [
+        "johnsca02",
+        "mathube01",
+        "gordoaa01"
+      ]
+    },
+    {
+      "player_id": "ingrabr01",
+      "similar_players": [
+        "millebr02",
+        "embiijo01",
+        "thomaca02"
+      ]
+    },
+    {
+      "player_id": "irvinky01",
+      "similar_players": [
+        "lillada01",
+        "murraja01",
+        "curryst01"
+      ]
+    },
+    {
+      "player_id": "iveyja01",
+      "similar_players": [
+        "mccaija01",
+        "quickim01",
+        "thomaca02"
+      ]
+    },
+    {
+      "player_id": "jacksja02",
+      "similar_players": [
+        "turnemy01",
+        "porzikr01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "jamesle01",
+      "similar_players": [
+        "duranke01",
+        "hardeja01",
+        "jokicni01"
+      ]
+    },
+    {
+      "player_id": "johnsca02",
+      "similar_players": [
+        "huntede01",
+        "markkla01",
+        "murphtr02"
+      ]
+    },
+    {
+      "player_id": "johnsja05",
+      "similar_players": [
+        "barnesc01",
+        "davisan02",
+        "doncilu01"
+      ]
+    },
+    {
+      "player_id": "jokicni01",
+      "similar_players": [
+        "townska01",
+        "sabondo01",
+        "doncilu01"
+      ]
+    },
+    {
+      "player_id": "kuminjo01",
+      "similar_players": [
+        "castlst01",
+        "kuzmaky01",
+        "grimequ01"
+      ]
+    },
+    {
+      "player_id": "kuzmaky01",
+      "similar_players": [
+        "kuminjo01",
+        "barrerj01",
+        "beaslma01"
+      ]
+    },
+    {
+      "player_id": "lavinza01",
+      "similar_players": [
+        "herroty01",
+        "brunsja01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "leonaka01",
+      "similar_players": [
+        "georgpa01",
+        "powelno01",
+        "butleji01"
+      ]
+    },
+    {
+      "player_id": "lillada01",
+      "similar_players": [
+        "curryst01",
+        "irvinky01",
+        "bookede01"
+      ]
+    },
+    {
+      "player_id": "markkla01",
+      "similar_players": [
+        "johnsca02",
+        "huntede01",
+        "mathube01"
+      ]
+    },
+    {
+      "player_id": "mathube01",
+      "similar_players": [
+        "huntede01",
+        "sharpsh01",
+        "grimequ01"
+      ]
+    },
+    {
+      "player_id": "maxeyty01",
+      "similar_players": [
+        "foxde01",
+        "murraja01",
+        "gilgesh01"
+      ]
+    },
+    {
+      "player_id": "mccaija01",
+      "similar_players": [
+        "quickim01",
+        "thomaca02",
+        "sextoco01"
+      ]
+    },
+    {
+      "player_id": "mccolcj01",
+      "similar_players": [
+        "bealbr01",
+        "powelno01",
+        "beaslma01"
+      ]
+    },
+    {
+      "player_id": "millebr02",
+      "similar_players": [
+        "ingrabr01",
+        "murphtr02",
+        "thomaca02"
+      ]
+    },
+    {
+      "player_id": "mitchdo01",
+      "similar_players": [
+        "garlada01",
+        "poolejo01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "mobleev01",
+      "similar_players": [
+        "sengual01",
+        "holmgch01",
+        "washipj01"
+      ]
+    },
+    {
+      "player_id": "monkma01",
+      "similar_players": [
+        "simonan01",
+        "georgke01",
+        "whiteco01"
+      ]
+    },
+    {
+      "player_id": "moranja01",
+      "similar_players": [
+        "ballla01",
+        "youngtr01",
+        "cunnica01"
+      ]
+    },
+    {
+      "player_id": "murphtr02",
+      "similar_players": [
+        "wagnefr01",
+        "millebr02",
+        "johnsca02"
+      ]
+    },
+    {
+      "player_id": "murrade01",
+      "similar_players": [
+        "georgpa01",
+        "doncilu01",
+        "suggsja01"
+      ]
+    },
+    {
+      "player_id": "murraja01",
+      "similar_players": [
+        "reaveau01",
+        "maxeyty01",
+        "halibty01"
+      ]
+    },
+    {
+      "player_id": "oubreke01",
+      "similar_players": [
+        "anunoog01",
+        "washipj01",
+        "wiggian01"
+      ]
+    },
+    {
+      "player_id": "poolejo01",
+      "similar_players": [
+        "garlada01",
+        "simonan01",
+        "whiteco01"
+      ]
+    },
+    {
+      "player_id": "portemi01",
+      "similar_players": [
+        "siakapa01",
+        "mathube01",
+        "braunch01"
+      ]
+    },
+    {
+      "player_id": "porzikr01",
+      "similar_players": [
+        "holmgch01",
+        "turnemy01",
+        "collijo01"
+      ]
+    },
+    {
+      "player_id": "powelno01",
+      "similar_players": [
+        "bealbr01",
+        "mccolcj01",
+        "mitchdo01"
+      ]
+    },
+    {
+      "player_id": "quickim01",
+      "similar_players": [
+        "mccaija01",
+        "clarkjo01",
+        "thomaca02"
+      ]
+    },
+    {
+      "player_id": "randlju01",
+      "similar_players": [
+        "sabondo01",
+        "avdijde01",
+        "vucevni01"
+      ]
+    },
+    {
+      "player_id": "reaveau01",
+      "similar_players": [
+        "murraja01",
+        "herroty01",
+        "whiteco01"
+      ]
+    },
+    {
+      "player_id": "sabondo01",
+      "similar_players": [
+        "townska01",
+        "vucevni01",
+        "adebaba01"
+      ]
+    },
+    {
+      "player_id": "sengual01",
+      "similar_players": [
+        "zubaciv01",
+        "adebaba01",
+        "barnesc01"
+      ]
+    },
+    {
+      "player_id": "sextoco01",
+      "similar_players": [
+        "mccaija01",
+        "garlada01",
+        "quickim01"
+      ]
+    },
+    {
+      "player_id": "sharpsh01",
+      "similar_players": [
+        "castlst01",
+        "greenja05",
+        "mathube01"
+      ]
+    },
+    {
+      "player_id": "siakapa01",
+      "similar_players": [
+        "portemi01",
+        "vucevni01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "simonan01",
+      "similar_players": [
+        "whiteco01",
+        "monkma01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "suggsja01",
+      "similar_players": [
+        "poolejo01",
+        "murrade01",
+        "millebr02"
+      ]
+    },
+    {
+      "player_id": "tatumja01",
+      "similar_players": [
+        "doncilu01",
+        "edwaran01",
+        "banchpa01"
+      ]
+    },
+    {
+      "player_id": "thomaca02",
+      "similar_players": [
+        "quickim01",
+        "mccaija01",
+        "millebr02"
+      ]
+    },
+    {
+      "player_id": "townska01",
+      "similar_players": [
+        "sabondo01",
+        "adebaba01",
+        "vucevni01"
+      ]
+    },
+    {
+      "player_id": "turnemy01",
+      "similar_players": [
+        "porzikr01",
+        "jacksja02",
+        "holmgch01"
+      ]
+    },
+    {
+      "player_id": "vassede01",
+      "similar_players": [
+        "grimequ01",
+        "beaslma01",
+        "sharpsh01"
+      ]
+    },
+    {
+      "player_id": "vucevni01",
+      "similar_players": [
+        "townska01",
+        "sabondo01",
+        "siakapa01"
+      ]
+    },
+    {
+      "player_id": "wagnefr01",
+      "similar_players": [
+        "murphtr02",
+        "maxeyty01",
+        "foxde01"
+      ]
+    },
+    {
+      "player_id": "washipj01",
+      "similar_players": [
+        "turnemy01",
+        "avdijde01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "wembavi01",
+      "similar_players": [
+        "davisan02",
+        "holmgch01",
+        "mobleev01"
+      ]
+    },
+    {
+      "player_id": "whiteco01",
+      "similar_players": [
+        "simonan01",
+        "reaveau01",
+        "herroty01"
+      ]
+    },
+    {
+      "player_id": "whitede01",
+      "similar_players": [
+        "monkma01",
+        "bridgmi01",
+        "reaveau01"
+      ]
+    },
+    {
+      "player_id": "wiggian01",
+      "similar_players": [
+        "beaslma01",
+        "huntede01",
+        "gordoaa01"
+      ]
+    },
+    {
+      "player_id": "willija06",
+      "similar_players": [
+        "halibty01",
+        "foxde01",
+        "gilgesh01"
+      ]
+    },
+    {
+      "player_id": "willima07",
+      "similar_players": [
+        "zubaciv01",
+        "sengual01",
+        "willizi01"
+      ]
+    },
+    {
+      "player_id": "willizi01",
+      "similar_players": [
+        "antetgi01",
+        "willima07",
+        "sengual01"
+      ]
+    },
+    {
+      "player_id": "youngtr01",
+      "similar_players": [
+        "cunnica01",
+        "hardeja01",
+        "ballla01"
+      ]
+    },
+    {
+      "player_id": "zubaciv01",
+      "similar_players": [
+        "willima07",
+        "sengual01",
+        "antetgi01"
+      ]
+    }
+  ],
+  "trends": [
+    {
+      "player_id": "adebaba01",
+      "values": [
+        74.253,
+        75.66,
+        76.25,
+        76.674,
+        76.757,
+        77.088
+      ]
+    },
+    {
+      "player_id": "antetgi01",
+      "values": [
+        84.168,
+        84.683,
+        84.297,
+        85.413,
+        87.273,
+        88.251
+      ]
+    },
+    {
+      "player_id": "anunoog01",
+      "values": [
+        71.663,
+        71.201,
+        72.701,
+        74.355,
+        73.494,
+        75.116
+      ]
+    },
+    {
+      "player_id": "avdijde01",
+      "values": [
+        71.122,
+        71.352,
+        73.389,
+        72.639,
+        75.112,
+        74.221
+      ]
+    },
+    {
+      "player_id": "ballla01",
+      "values": [
+        78.195,
+        80.202,
+        79.519,
+        82.103,
+        81.033,
+        83.464
+      ]
+    },
+    {
+      "player_id": "banchpa01",
+      "values": [
+        75.651,
+        78.304,
+        78.265,
+        78.336,
+        80.588,
+        80.695
+      ]
+    },
+    {
+      "player_id": "banede01",
+      "values": [
+        74.233,
+        75.887,
+        77.678,
+        78.431,
+        77.985,
+        78.504
+      ]
+    },
+    {
+      "player_id": "barnesc01",
+      "values": [
+        73.755,
+        74.542,
+        75.324,
+        76.665,
+        77.967,
+        79.259
+      ]
+    },
+    {
+      "player_id": "barrerj01",
+      "values": [
+        73.99,
+        75.105,
+        75.82,
+        76.736,
+        77.451,
+        78.266
+      ]
+    },
+    {
+      "player_id": "bealbr01",
+      "values": [
+        71.437,
+        72.837,
+        73.399,
+        73.79,
+        73.86,
+        74.221
+      ]
+    },
+    {
+      "player_id": "beaslma01",
+      "values": [
+        67.878,
+        68.362,
+        67.983,
+        69.169,
+        71.035,
+        71.907
+      ]
+    },
+    {
+      "player_id": "bookede01",
+      "values": [
+        81.048,
+        80.58,
+        82.139,
+        83.714,
+        82.854,
+        84.599
+      ]
+    },
+    {
+      "player_id": "braunch01",
+      "values": [
+        71.426,
+        71.695,
+        73.684,
+        72.972,
+        75.438,
+        74.502
+      ]
+    },
+    {
+      "player_id": "bridgmi01",
+      "values": [
+        71.703,
+        73.747,
+        73.021,
+        75.631,
+        74.575,
+        76.933
+      ]
+    },
+    {
+      "player_id": "bridgmi02",
+      "values": [
+        72.238,
+        74.882,
+        74.905,
+        74.904,
+        77.138,
+        77.38
+      ]
+    },
+    {
+      "player_id": "brownja02",
+      "values": [
+        73.592,
+        75.216,
+        77.009,
+        77.83,
+        77.404,
+        77.826
+      ]
+    },
+    {
+      "player_id": "brunsja01",
+      "values": [
+        80.183,
+        80.964,
+        81.72,
+        83.026,
+        84.309,
+        85.619
+      ]
+    },
+    {
+      "player_id": "butleji01",
+      "values": [
+        74.319,
+        75.449,
+        76.179,
+        77.109,
+        77.839,
+        78.669
+      ]
+    },
+    {
+      "player_id": "castlst01",
+      "values": [
+        68.517,
+        69.909,
+        70.441,
+        70.799,
+        70.862,
+        71.257
+      ]
+    },
+    {
+      "player_id": "clarkjo01",
+      "values": [
+        68.809,
+        69.261,
+        68.893,
+        70.148,
+        72.014,
+        72.777
+      ]
+    },
+    {
+      "player_id": "collijo01",
+      "values": [
+        71.361,
+        70.887,
+        72.505,
+        73.999,
+        73.147,
+        75.01
+      ]
+    },
+    {
+      "player_id": "cunnica01",
+      "values": [
+        82.615,
+        82.922,
+        84.86,
+        84.193,
+        86.641,
+        85.676
+      ]
+    },
+    {
+      "player_id": "curryst01",
+      "values": [
+        77.958,
+        80.038,
+        79.271,
+        81.902,
+        80.869,
+        83.141
+      ]
+    },
+    {
+      "player_id": "davisan02",
+      "values": [
+        75.955,
+        78.59,
+        78.674,
+        78.606,
+        80.813,
+        81.193
+      ]
+    },
+    {
+      "player_id": "derozde01",
+      "values": [
+        74.802,
+        76.394,
+        78.189,
+        79.076,
+        78.676,
+        79.006
+      ]
+    },
+    {
+      "player_id": "doncilu01",
+      "values": [
+        82.017,
+        82.795,
+        83.525,
+        84.796,
+        86.057,
+        87.379
+      ]
+    },
+    {
+      "player_id": "duranke01",
+      "values": [
+        78.204,
+        79.349,
+        80.094,
+        81.039,
+        81.783,
+        82.627
+      ]
+    },
+    {
+      "player_id": "edwaran01",
+      "values": [
+        78.891,
+        80.275,
+        80.776,
+        81.102,
+        81.161,
+        81.597
+      ]
+    },
+    {
+      "player_id": "embiijo01",
+      "values": [
+        75.402,
+        75.823,
+        75.466,
+        76.792,
+        78.65,
+        79.303
+      ]
+    },
+    {
+      "player_id": "foxde01",
+      "values": [
+        78.618,
+        78.141,
+        79.816,
+        81.225,
+        80.392,
+        82.362
+      ]
+    },
+    {
+      "player_id": "garlada01",
+      "values": [
+        77.051,
+        77.398,
+        79.283,
+        78.666,
+        81.087,
+        80.107
+      ]
+    },
+    {
+      "player_id": "georgke01",
+      "values": [
+        70.882,
+        72.996,
+        72.193,
+        74.838,
+        73.839,
+        76.012
+      ]
+    },
+    {
+      "player_id": "georgpa01",
+      "values": [
+        69.692,
+        72.316,
+        72.463,
+        72.332,
+        74.504,
+        75.023
+      ]
+    },
+    {
+      "player_id": "gilgesh01",
+      "values": [
+        84.666,
+        86.228,
+        88.02,
+        88.973,
+        88.606,
+        88.849
+      ]
+    },
+    {
+      "player_id": "gordoaa01",
+      "values": [
+        68.884,
+        69.658,
+        70.365,
+        71.601,
+        72.837,
+        74.165
+      ]
+    },
+    {
+      "player_id": "greenja05",
+      "values": [
+        72.135,
+        73.296,
+        74.055,
+        75.014,
+        75.772,
+        76.628
+      ]
+    },
+    {
+      "player_id": "grimequ01",
+      "values": [
+        68.505,
+        69.879,
+        70.35,
+        70.645,
+        70.704,
+        71.185
+      ]
+    },
+    {
+      "player_id": "halibty01",
+      "values": [
+        80.9,
+        81.29,
+        80.948,
+        82.343,
+        84.187,
+        84.729
+      ]
+    },
+    {
+      "player_id": "hardeja01",
+      "values": [
+        80.48,
+        79.999,
+        81.73,
+        83.052,
+        82.247,
+        84.316
+      ]
+    },
+    {
+      "player_id": "herroty01",
+      "values": [
+        78.013,
+        78.4,
+        80.229,
+        79.668,
+        82.051,
+        81.072
+      ]
+    },
+    {
+      "player_id": "holmgch01",
+      "values": [
+        67.118,
+        69.266,
+        68.428,
+        71.082,
+        70.126,
+        72.188
+      ]
+    },
+    {
+      "player_id": "huntede01",
+      "values": [
+        67.165,
+        69.777,
+        69.988,
+        69.798,
+        71.926,
+        72.586
+      ]
+    },
+    {
+      "player_id": "ingrabr01",
+      "values": [
+        73.415,
+        74.947,
+        76.735,
+        77.752,
+        77.423,
+        77.587
+      ]
+    },
+    {
+      "player_id": "irvinky01",
+      "values": [
+        77.058,
+        77.829,
+        78.512,
+        79.714,
+        80.922,
+        82.251
+      ]
+    },
+    {
+      "player_id": "iveyja01",
+      "values": [
+        69.644,
+        70.819,
+        71.593,
+        72.565,
+        73.336,
+        74.203
+      ]
+    },
+    {
+      "player_id": "jacksja02",
+      "values": [
+        72.794,
+        74.158,
+        74.597,
+        74.863,
+        74.926,
+        75.458
+      ]
+    },
+    {
+      "player_id": "jamesle01",
+      "values": [
+        82.16,
+        82.519,
+        82.194,
+        83.657,
+        85.48,
+        85.911
+      ]
+    },
+    {
+      "player_id": "johnsca02",
+      "values": [
+        72.767,
+        72.284,
+        74.07,
+        75.303,
+        74.534,
+        76.692
+      ]
+    },
+    {
+      "player_id": "johnsja05",
+      "values": [
+        74.385,
+        74.813,
+        76.584,
+        76.085,
+        78.42,
+        77.456
+      ]
+    },
+    {
+      "player_id": "jokicni01",
+      "values": [
+        89.632,
+        91.814,
+        90.944,
+        93.599,
+        92.696,
+        94.638
+      ]
+    },
+    {
+      "player_id": "kuminjo01",
+      "values": [
+        65.091,
+        67.689,
+        67.963,
+        67.718,
+        69.795,
+        70.596
+      ]
+    },
+    {
+      "player_id": "kuzmaky01",
+      "values": [
+        64.771,
+        66.272,
+        68.055,
+        69.134,
+        68.848,
+        68.939
+      ]
+    },
+    {
+      "player_id": "lavinza01",
+      "values": [
+        75.223,
+        75.992,
+        76.653,
+        77.82,
+        78.999,
+        80.324
+      ]
+    },
+    {
+      "player_id": "leonaka01",
+      "values": [
+        73.673,
+        74.863,
+        75.651,
+        76.636,
+        77.418,
+        78.295
+      ]
+    },
+    {
+      "player_id": "lillada01",
+      "values": [
+        80.801,
+        82.154,
+        82.561,
+        82.799,
+        82.871,
+        83.458
+      ]
+    },
+    {
+      "player_id": "markkla01",
+      "values": [
+        69.946,
+        70.274,
+        69.968,
+        71.5,
+        73.294,
+        73.615
+      ]
+    },
+    {
+      "player_id": "mathube01",
+      "values": [
+        68.342,
+        67.858,
+        69.697,
+        70.839,
+        70.115,
+        72.351
+      ]
+    },
+    {
+      "player_id": "maxeyty01",
+      "values": [
+        79.832,
+        80.301,
+        82.013,
+        81.579,
+        83.858,
+        82.925
+      ]
+    },
+    {
+      "player_id": "mccaija01",
+      "values": [
+        66.676,
+        68.89,
+        67.991,
+        70.643,
+        69.801,
+        71.613
+      ]
+    },
+    {
+      "player_id": "mccolcj01",
+      "values": [
+        71.946,
+        74.531,
+        74.868,
+        74.574,
+        76.592,
+        77.532
+      ]
+    },
+    {
+      "player_id": "millebr02",
+      "values": [
+        70.84,
+        72.312,
+        74.087,
+        75.226,
+        74.988,
+        75.015
+      ]
+    },
+    {
+      "player_id": "mitchdo01",
+      "values": [
+        76.099,
+        76.867,
+        77.508,
+        78.641,
+        79.789,
+        81.105
+      ]
+    },
+    {
+      "player_id": "mobleev01",
+      "values": [
+        72.751,
+        73.955,
+        74.756,
+        75.753,
+        76.545,
+        77.429
+      ]
+    },
+    {
+      "player_id": "monkma01",
+      "values": [
+        73.247,
+        74.588,
+        74.962,
+        75.174,
+        75.26,
+        75.907
+      ]
+    },
+    {
+      "player_id": "moranja01",
+      "values": [
+        78.057,
+        78.354,
+        78.07,
+        79.669,
+        81.427,
+        81.64
+      ]
+    },
+    {
+      "player_id": "murphtr02",
+      "values": [
+        74.345,
+        73.861,
+        75.752,
+        76.8,
+        76.13,
+        78.433
+      ]
+    },
+    {
+      "player_id": "murrade01",
+      "values": [
+        74.512,
+        75.023,
+        76.673,
+        76.31,
+        78.522,
+        77.636
+      ]
+    },
+    {
+      "player_id": "murraja01",
+      "values": [
+        77.033,
+        79.279,
+        78.355,
+        80.996,
+        80.225,
+        81.899
+      ]
+    },
+    {
+      "player_id": "oubreke01",
+      "values": [
+        66.911,
+        69.481,
+        69.882,
+        69.542,
+        71.495,
+        72.571
+      ]
+    },
+    {
+      "player_id": "poolejo01",
+      "values": [
+        71.968,
+        73.41,
+        75.174,
+        76.372,
+        76.187,
+        76.157
+      ]
+    },
+    {
+      "player_id": "portemi01",
+      "values": [
+        70.256,
+        71.024,
+        71.645,
+        72.745,
+        73.86,
+        75.162
+      ]
+    },
+    {
+      "player_id": "porzikr01",
+      "values": [
+        71.108,
+        72.326,
+        73.14,
+        74.148,
+        74.948,
+        75.837
+      ]
+    },
+    {
+      "player_id": "powelno01",
+      "values": [
+        72.551,
+        73.879,
+        74.22,
+        74.408,
+        74.512,
+        75.223
+      ]
+    },
+    {
+      "player_id": "quickim01",
+      "values": [
+        73.216,
+        73.482,
+        73.222,
+        74.887,
+        76.602,
+        76.711
+      ]
+    },
+    {
+      "player_id": "randlju01",
+      "values": [
+        73.569,
+        73.087,
+        75.027,
+        75.981,
+        75.374,
+        77.731
+      ]
+    },
+    {
+      "player_id": "reaveau01",
+      "values": [
+        76.009,
+        76.562,
+        78.148,
+        77.861,
+        79.998,
+        79.172
+      ]
+    },
+    {
+      "player_id": "sabondo01",
+      "values": [
+        77.25,
+        79.526,
+        78.58,
+        81.205,
+        80.512,
+        82.041
+      ]
+    },
+    {
+      "player_id": "sengual01",
+      "values": [
+        72.693,
+        75.247,
+        75.711,
+        75.331,
+        77.212,
+        78.42
+      ]
+    },
+    {
+      "player_id": "sextoco01",
+      "values": [
+        70.587,
+        72.0,
+        73.752,
+        75.005,
+        74.876,
+        74.799
+      ]
+    },
+    {
+      "player_id": "sharpsh01",
+      "values": [
+        69.244,
+        70.013,
+        70.616,
+        71.683,
+        72.764,
+        74.048
+      ]
+    },
+    {
+      "player_id": "siakapa01",
+      "values": [
+        73.864,
+        75.096,
+        75.923,
+        76.94,
+        77.746,
+        78.637
+      ]
+    },
+    {
+      "player_id": "simonan01",
+      "values": [
+        73.879,
+        75.194,
+        75.501,
+        75.668,
+        75.794,
+        76.572
+      ]
+    },
+    {
+      "player_id": "suggsja01",
+      "values": [
+        69.462,
+        69.697,
+        69.464,
+        71.192,
+        72.858,
+        72.867
+      ]
+    },
+    {
+      "player_id": "tatumja01",
+      "values": [
+        80.893,
+        80.413,
+        82.401,
+        83.26,
+        82.724,
+        85.121
+      ]
+    },
+    {
+      "player_id": "thomaca02",
+      "values": [
+        73.64,
+        74.235,
+        75.756,
+        75.549,
+        77.602,
+        76.851
+      ]
+    },
+    {
+      "player_id": "townska01",
+      "values": [
+        76.563,
+        78.869,
+        77.903,
+        80.505,
+        79.899,
+        81.277
+      ]
+    },
+    {
+      "player_id": "turnemy01",
+      "values": [
+        67.014,
+        69.551,
+        70.078,
+        69.663,
+        71.465,
+        72.801
+      ]
+    },
+    {
+      "player_id": "vassede01",
+      "values": [
+        68.522,
+        69.906,
+        71.644,
+        72.95,
+        72.882,
+        72.766
+      ]
+    },
+    {
+      "player_id": "vucevni01",
+      "values": [
+        73.216,
+        73.986,
+        74.573,
+        75.609,
+        76.655,
+        77.917
+      ]
+    },
+    {
+      "player_id": "wagnefr01",
+      "values": [
+        76.734,
+        77.98,
+        78.818,
+        79.844,
+        80.654,
+        81.545
+      ]
+    },
+    {
+      "player_id": "washipj01",
+      "values": [
+        68.326,
+        69.627,
+        69.9,
+        70.047,
+        70.201,
+        71.048
+      ]
+    },
+    {
+      "player_id": "wembavi01",
+      "values": [
+        77.146,
+        77.351,
+        77.146,
+        78.937,
+        80.546,
+        80.46
+      ]
+    },
+    {
+      "player_id": "whiteco01",
+      "values": [
+        74.506,
+        74.03,
+        76.064,
+        76.826,
+        76.369,
+        78.793
+      ]
+    },
+    {
+      "player_id": "whitede01",
+      "values": [
+        72.54,
+        73.179,
+        74.632,
+        74.509,
+        76.471,
+        75.808
+      ]
+    },
+    {
+      "player_id": "wiggian01",
+      "values": [
+        69.105,
+        71.439,
+        70.457,
+        73.031,
+        72.519,
+        73.741
+      ]
+    },
+    {
+      "player_id": "willija06",
+      "values": [
+        75.103,
+        77.622,
+        78.212,
+        77.767,
+        79.485,
+        80.942
+      ]
+    },
+    {
+      "player_id": "willima07",
+      "values": [
+        67.562,
+        68.918,
+        70.64,
+        71.996,
+        71.991,
+        71.845
+      ]
+    },
+    {
+      "player_id": "willizi01",
+      "values": [
+        75.766,
+        76.538,
+        77.11,
+        78.115,
+        79.126,
+        80.363
+      ]
+    },
+    {
+      "player_id": "youngtr01",
+      "values": [
+        83.373,
+        84.633,
+        85.482,
+        86.515,
+        87.327,
+        88.214
+      ]
+    },
+    {
+      "player_id": "zubaciv01",
+      "values": [
+        71.302,
+        72.588,
+        72.827,
+        72.957,
+        73.143,
+        74.062
+      ]
+    }
+  ],
+  "explanations": [
+    {
+      "player_id": "adebaba01",
+      "explanation": "Bam Adebayo 的画像主要由 前场冲抢能力、篮板控制能力 和 后场保护能力 驱动；基础数据上场均 18.1 分、4.3 助攻、9.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "antetgi01",
+      "explanation": "Giannis Antetokounmpo 的画像主要由 罚球稳定性、终结效率 和 后场保护能力 驱动；基础数据上场均 30.4 分、6.5 助攻、11.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "anunoog01",
+      "explanation": "OG Anunoby 的画像主要由 轮换权重、外线压迫防守 和 控失误能力 驱动；基础数据上场均 18.0 分、2.2 助攻、4.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "avdijde01",
+      "explanation": "Deni Avdija 的画像主要由 锋线属性、得分爆发力 和 轮换权重 驱动；基础数据上场均 16.9 分、3.9 助攻、7.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "ballla01",
+      "explanation": "LaMelo Ball 的画像主要由 控失误能力、终结效率 和 组织分球能力 驱动；基础数据上场均 25.2 分、7.4 助攻、4.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "banchpa01",
+      "explanation": "Paolo Banchero 的画像主要由 得分爆发力、罚球稳定性 和 年龄画像 驱动；基础数据上场均 25.9 分、4.8 助攻、7.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "banede01",
+      "explanation": "Desmond Bane 的画像主要由 罚球稳定性、后卫属性 和 投射效率 驱动；基础数据上场均 19.2 分、5.3 助攻、6.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "barnesc01",
+      "explanation": "Scottie Barnes 的画像主要由 外线投射、外线压迫防守 和 锋线属性 驱动；基础数据上场均 19.3 分、5.8 助攻、7.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "barrerj01",
+      "explanation": "RJ Barrett 的画像主要由 罚球稳定性、锋线属性 和 外线压迫防守 驱动；基础数据上场均 21.1 分、5.4 助攻、6.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "bealbr01",
+      "explanation": "Bradley Beal 的画像主要由 年龄画像、后场保护能力 和 后卫属性 驱动；基础数据上场均 17.0 分、3.7 助攻、3.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "beaslma01",
+      "explanation": "Malik Beasley 的画像主要由 罚球稳定性、控失误能力 和 轮换权重 驱动；基础数据上场均 16.3 分、1.7 助攻、2.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "bookede01",
+      "explanation": "Devin Booker 的画像主要由 轮换权重、组织分球能力 和 得分爆发力 驱动；基础数据上场均 25.6 分、7.1 助攻、4.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "braunch01",
+      "explanation": "Christian Braun 的画像主要由 终结效率、控失误能力 和 得分爆发力 驱动；基础数据上场均 15.4 分、2.6 助攻、5.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "bridgmi01",
+      "explanation": "Mikal Bridges 的画像主要由 轮换权重、出勤稳定性 和 后场保护能力 驱动；基础数据上场均 17.6 分、3.7 助攻、3.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "bridgmi02",
+      "explanation": "Miles Bridges 的画像主要由 外线压迫防守、锋线属性 和 终结效率 驱动；基础数据上场均 20.3 分、3.9 助攻、7.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "brownja02",
+      "explanation": "Jaylen Brown 的画像主要由 锋线属性、出勤耐久度 和 罚球稳定性 驱动；基础数据上场均 22.2 分、4.5 助攻、5.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "brunsja01",
+      "explanation": "Jalen Brunson 的画像主要由 组织分球能力、得分爆发力 和 篮板控制能力 驱动；基础数据上场均 26.0 分、7.3 助攻、2.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "butleji01",
+      "explanation": "Jimmy Butler 的画像主要由 年龄画像、前场冲抢能力 和 控失误能力 驱动；基础数据上场均 17.5 分、5.4 助攻、5.4 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "castlst01",
+      "explanation": "Stephon Castle 的画像主要由 轮换权重、年龄画像 和 得分爆发力 驱动；基础数据上场均 14.7 分、4.1 助攻、3.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "clarkjo01",
+      "explanation": "Jordan Clarkson 的画像主要由 轮换权重、出勤稳定性 和 终结效率 驱动；基础数据上场均 16.2 分、3.7 助攻、3.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "collijo01",
+      "explanation": "John Collins 的画像主要由 前场冲抢能力、组织分球能力 和 出勤稳定性 驱动；基础数据上场均 19.0 分、2.0 助攻、8.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "cunnica01",
+      "explanation": "Cade Cunningham 的画像主要由 控失误能力、组织分球能力 和 得分爆发力 驱动；基础数据上场均 26.1 分、9.1 助攻、6.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "curryst01",
+      "explanation": "Stephen Curry 的画像主要由 年龄画像、罚球稳定性 和 后卫属性 驱动；基础数据上场均 24.5 分、6.0 助攻、4.4 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "davisan02",
+      "explanation": "Anthony Davis 的画像主要由 护框封盖能力、篮板控制能力 和 后场保护能力 驱动；基础数据上场均 24.7 分、3.5 助攻、11.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "derozde01",
+      "explanation": "DeMar DeRozan 的画像主要由 年龄画像、控失误能力 和 轮换权重 驱动；基础数据上场均 22.2 分、4.4 助攻、3.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "doncilu01",
+      "explanation": "Luka Dončić 的画像主要由 外线压迫防守、得分爆发力 和 控失误能力 驱动；基础数据上场均 28.2 分、7.7 助攻、8.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "duranke01",
+      "explanation": "Kevin Durant 的画像主要由 年龄画像、得分爆发力 和 轮换权重 驱动；基础数据上场均 26.6 分、4.2 助攻、6.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "edwaran01",
+      "explanation": "Anthony Edwards 的画像主要由 得分爆发力、轮换权重 和 出勤稳定性 驱动；基础数据上场均 27.6 分、4.5 助攻、5.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "embiijo01",
+      "explanation": "Joel Embiid 的画像主要由 出勤稳定性、控失误能力 和 外线压迫防守 驱动；基础数据上场均 23.8 分、4.5 助攻、8.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "foxde01",
+      "explanation": "De'Aaron Fox 的画像主要由 外线压迫防守、轮换权重 和 后卫属性 驱动；基础数据上场均 23.5 分、6.3 助攻、4.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "garlada01",
+      "explanation": "Darius Garland 的画像主要由 后场保护能力、篮板控制能力 和 组织分球能力 驱动；基础数据上场均 20.6 分、6.7 助攻、2.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "georgke01",
+      "explanation": "Keyonte George 的画像主要由 终结效率、年龄画像 和 外线压迫防守 驱动；基础数据上场均 16.8 分、5.6 助攻、3.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "georgpa01",
+      "explanation": "Paul George 的画像主要由 外线压迫防守、年龄画像 和 出勤稳定性 驱动；基础数据上场均 16.2 分、4.3 助攻、5.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "gilgesh01",
+      "explanation": "Shai Gilgeous-Alexander 的画像主要由 得分爆发力、外线压迫防守 和 罚球稳定性 驱动；基础数据上场均 32.7 分、6.4 助攻、5.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "gordoaa01",
+      "explanation": "Aaron Gordon 的画像主要由 外线压迫防守、得分爆发力 和 轮换权重 驱动；基础数据上场均 14.7 分、3.2 助攻、4.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "greenja05",
+      "explanation": "Jalen Green 的画像主要由 出勤稳定性、年龄画像 和 终结效率 驱动；基础数据上场均 21.0 分、3.4 助攻、4.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "grimequ01",
+      "explanation": "Quentin Grimes 的画像主要由 轮换权重、得分爆发力 和 后卫属性 驱动；基础数据上场均 14.6 分、3.0 助攻、4.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "halibty01",
+      "explanation": "Tyrese Haliburton 的画像主要由 组织分球能力、外线压迫防守 和 控失误能力 驱动；基础数据上场均 18.6 分、9.2 助攻、3.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "hardeja01",
+      "explanation": "James Harden 的画像主要由 控失误能力、组织分球能力 和 年龄画像 驱动；基础数据上场均 22.8 分、8.7 助攻、5.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "herroty01",
+      "explanation": "Tyler Herro 的画像主要由 轮换权重、出勤稳定性 和 后卫属性 驱动；基础数据上场均 23.9 分、5.5 助攻、5.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "holmgch01",
+      "explanation": "Chet Holmgren 的画像主要由 护框封盖能力、出勤稳定性 和 轮换权重 驱动；基础数据上场均 15.0 分、2.0 助攻、8.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "huntede01",
+      "explanation": "De'Andre Hunter 的画像主要由 轮换权重、组织分球能力 和 控失误能力 驱动；基础数据上场均 17.0 分、1.4 助攻、4.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "ingrabr01",
+      "explanation": "Brandon Ingram 的画像主要由 出勤稳定性、控失误能力 和 锋线属性 驱动；基础数据上场均 22.2 分、5.2 助攻、5.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "irvinky01",
+      "explanation": "Kyrie Irving 的画像主要由 罚球稳定性、年龄画像 和 轮换权重 驱动；基础数据上场均 24.7 分、4.6 助攻、4.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "iveyja01",
+      "explanation": "Jaden Ivey 的画像主要由 出勤稳定性、年龄画像 和 罚球稳定性 驱动；基础数据上场均 17.6 分、4.0 助攻、4.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "jacksja02",
+      "explanation": "Jaren Jackson Jr. 的画像主要由 护框封盖能力、组织分球能力 和 内线属性 驱动；基础数据上场均 22.2 分、2.0 助攻、5.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "jamesle01",
+      "explanation": "LeBron James 的画像主要由 年龄画像、组织分球能力 和 控失误能力 驱动；基础数据上场均 24.4 分、8.2 助攻、7.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "johnsca02",
+      "explanation": "Cameron Johnson 的画像主要由 罚球稳定性、锋线属性 和 控失误能力 驱动；基础数据上场均 18.8 分、3.4 助攻、4.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "johnsja05",
+      "explanation": "Jalen Johnson 的画像主要由 后场保护能力、外线压迫防守 和 篮板控制能力 驱动；基础数据上场均 18.9 分、5.0 助攻、10.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "jokicni01",
+      "explanation": "Nikola Jokić 的画像主要由 组织分球能力、后场保护能力 和 篮板控制能力 驱动；基础数据上场均 29.6 分、10.2 助攻、12.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "kuminjo01",
+      "explanation": "Jonathan Kuminga 的画像主要由 轮换权重、罚球稳定性 和 得分爆发力 驱动；基础数据上场均 15.3 分、2.2 助攻、4.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "kuzmaky01",
+      "explanation": "Kyle Kuzma 的画像主要由 罚球稳定性、外线压迫防守 和 得分爆发力 驱动；基础数据上场均 14.8 分、2.3 助攻、5.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "lavinza01",
+      "explanation": "Zach LaVine 的画像主要由 外线投射、前场冲抢能力 和 后卫属性 驱动；基础数据上场均 23.3 分、4.2 助攻、4.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "leonaka01",
+      "explanation": "Kawhi Leonard 的画像主要由 外线压迫防守、年龄画像 和 出勤稳定性 驱动；基础数据上场均 21.5 分、3.1 助攻、5.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "lillada01",
+      "explanation": "Damian Lillard 的画像主要由 年龄画像、罚球稳定性 和 组织分球能力 驱动；基础数据上场均 24.9 分、7.1 助攻、4.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "markkla01",
+      "explanation": "Lauri Markkanen 的画像主要由 组织分球能力、控失误能力 和 外线压迫防守 驱动；基础数据上场均 19.0 分、1.5 助攻、5.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "mathube01",
+      "explanation": "Bennedict Mathurin 的画像主要由 组织分球能力、年龄画像 和 外线压迫防守 驱动；基础数据上场均 16.1 分、1.9 助攻、5.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "maxeyty01",
+      "explanation": "Tyrese Maxey 的画像主要由 外线压迫防守、轮换权重 和 得分爆发力 驱动；基础数据上场均 26.3 分、6.1 助攻、3.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "mccaija01",
+      "explanation": "Jared McCain 的画像主要由 出勤稳定性、轮换权重 和 年龄画像 驱动；基础数据上场均 15.3 分、2.6 助攻、2.4 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "mccolcj01",
+      "explanation": "CJ McCollum 的画像主要由 年龄画像、罚球稳定性 和 后卫属性 驱动；基础数据上场均 21.1 分、4.1 助攻、3.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "millebr02",
+      "explanation": "Brandon Miller 的画像主要由 出勤稳定性、终结效率 和 年龄画像 驱动；基础数据上场均 21.0 分、3.6 助攻、4.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "mitchdo01",
+      "explanation": "Donovan Mitchell 的画像主要由 后卫属性、得分爆发力 和 护框封盖能力 驱动；基础数据上场均 24.0 分、5.0 助攻、4.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "mobleev01",
+      "explanation": "Evan Mobley 的画像主要由 护框封盖能力、终结效率 和 前场冲抢能力 驱动；基础数据上场均 18.5 分、3.2 助攻、9.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "monkma01",
+      "explanation": "Malik Monk 的画像主要由 后卫属性、前场冲抢能力 和 得分爆发力 驱动；基础数据上场均 17.2 分、5.6 助攻、3.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "moranja01",
+      "explanation": "Ja Morant 的画像主要由 控失误能力、组织分球能力 和 后卫属性 驱动；基础数据上场均 23.2 分、7.3 助攻、4.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "murphtr02",
+      "explanation": "Trey Murphy III 的画像主要由 罚球稳定性、锋线属性 和 轮换权重 驱动；基础数据上场均 21.2 分、3.5 助攻、5.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "murrade01",
+      "explanation": "Dejounte Murray 的画像主要由 外线压迫防守、出勤稳定性 和 终结效率 驱动；基础数据上场均 17.5 分、7.4 助攻、6.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "murraja01",
+      "explanation": "Jamal Murray 的画像主要由 轮换权重、罚球稳定性 和 外线压迫防守 驱动；基础数据上场均 21.4 分、6.0 助攻、3.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "oubreke01",
+      "explanation": "Kelly Oubre Jr. 的画像主要由 控失误能力、外线压迫防守 和 组织分球能力 驱动；基础数据上场均 15.1 分、1.8 助攻、6.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "poolejo01",
+      "explanation": "Jordan Poole 的画像主要由 篮板控制能力、后场保护能力 和 罚球稳定性 驱动；基础数据上场均 20.5 分、4.5 助攻、3.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "portemi01",
+      "explanation": "Michael Porter Jr. 的画像主要由 外线压迫防守、控失误能力 和 组织分球能力 驱动；基础数据上场均 18.2 分、2.1 助攻、7.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "porzikr01",
+      "explanation": "Kristaps Porziņģis 的画像主要由 护框封盖能力、控失误能力 和 组织分球能力 驱动；基础数据上场均 19.5 分、2.1 助攻、6.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "powelno01",
+      "explanation": "Norman Powell 的画像主要由 组织分球能力、年龄画像 和 篮板控制能力 驱动；基础数据上场均 21.8 分、2.1 助攻、3.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "quickim01",
+      "explanation": "Immanuel Quickley 的画像主要由 出勤稳定性、轮换权重 和 终结效率 驱动；基础数据上场均 17.1 分、5.8 助攻、3.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "randlju01",
+      "explanation": "Julius Randle 的画像主要由 前场冲抢能力、外线压迫防守 和 锋线属性 驱动；基础数据上场均 18.7 分、4.7 助攻、7.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "reaveau01",
+      "explanation": "Austin Reaves 的画像主要由 后卫属性、罚球稳定性 和 轮换权重 驱动；基础数据上场均 20.2 分、5.8 助攻、4.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "sabondo01",
+      "explanation": "Domantas Sabonis 的画像主要由 前场冲抢能力、篮板控制能力 和 后场保护能力 驱动；基础数据上场均 19.1 分、6.0 助攻、13.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "sengual01",
+      "explanation": "Alperen Şengün 的画像主要由 前场冲抢能力、外线投射 和 罚球稳定性 驱动；基础数据上场均 19.1 分、4.9 助攻、10.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "sextoco01",
+      "explanation": "Collin Sexton 的画像主要由 轮换权重、后场保护能力 和 篮板控制能力 驱动；基础数据上场均 18.4 分、4.2 助攻、2.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "sharpsh01",
+      "explanation": "Shaedon Sharpe 的画像主要由 年龄画像、后卫属性 和 组织分球能力 驱动；基础数据上场均 18.5 分、2.8 助攻、4.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "siakapa01",
+      "explanation": "Pascal Siakam 的画像主要由 控失误能力、罚球稳定性 和 出勤稳定性 驱动；基础数据上场均 20.2 分、3.4 助攻、6.9 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "simonan01",
+      "explanation": "Anfernee Simons 的画像主要由 罚球稳定性、篮板控制能力 和 后场保护能力 驱动；基础数据上场均 19.3 分、4.8 助攻、2.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "suggsja01",
+      "explanation": "Jalen Suggs 的画像主要由 出勤稳定性、外线压迫防守 和 终结效率 驱动；基础数据上场均 16.2 分、3.7 助攻、4.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "tatumja01",
+      "explanation": "Jayson Tatum 的画像主要由 后场保护能力、得分爆发力 和 轮换权重 驱动；基础数据上场均 26.8 分、6.0 助攻、8.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "thomaca02",
+      "explanation": "Cam Thomas 的画像主要由 出勤稳定性、外线压迫防守 和 罚球稳定性 驱动；基础数据上场均 24.0 分、3.8 助攻、3.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "townska01",
+      "explanation": "Karl-Anthony Towns 的画像主要由 篮板控制能力、后场保护能力 和 前场冲抢能力 驱动；基础数据上场均 24.4 分、3.1 助攻、12.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "turnemy01",
+      "explanation": "Myles Turner 的画像主要由 护框封盖能力、组织分球能力 和 得分爆发力 驱动；基础数据上场均 15.6 分、1.5 助攻、6.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "vassede01",
+      "explanation": "Devin Vassell 的画像主要由 控失误能力、得分爆发力 和 后卫属性 驱动；基础数据上场均 16.3 分、2.9 助攻、4.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "vucevni01",
+      "explanation": "Nikola Vučević 的画像主要由 年龄画像、篮板控制能力 和 前场冲抢能力 驱动；基础数据上场均 18.5 分、3.5 助攻、10.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "wagnefr01",
+      "explanation": "Franz Wagner 的画像主要由 锋线属性、年龄画像 和 得分爆发力 驱动；基础数据上场均 24.2 分、4.7 助攻、5.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "washipj01",
+      "explanation": "P.J. Washington 的画像主要由 得分爆发力、罚球稳定性 和 组织分球能力 驱动；基础数据上场均 14.7 分、2.3 助攻、7.8 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "wembavi01",
+      "explanation": "Victor Wembanyama 的画像主要由 护框封盖能力、后场保护能力 和 篮板控制能力 驱动；基础数据上场均 24.3 分、3.7 助攻、11.0 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "whiteco01",
+      "explanation": "Coby White 的画像主要由 罚球稳定性、前场冲抢能力 和 后卫属性 驱动；基础数据上场均 20.4 分、4.5 助攻、3.7 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "whitede01",
+      "explanation": "Derrick White 的画像主要由 得分爆发力、后卫属性 和 出勤稳定性 驱动；基础数据上场均 16.4 分、4.8 助攻、4.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "wiggian01",
+      "explanation": "Andrew Wiggins 的画像主要由 锋线属性、组织分球能力 和 控失误能力 驱动；基础数据上场均 18.0 分、2.6 助攻、4.5 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "willija06",
+      "explanation": "Jalen Williams 的画像主要由 外线压迫防守、后卫属性 和 年龄画像 驱动；基础数据上场均 21.6 分、5.1 助攻、5.3 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "willima07",
+      "explanation": "Mark Williams 的画像主要由 外线投射、终结效率 和 前场冲抢能力 驱动；基础数据上场均 15.3 分、2.5 助攻、10.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "willizi01",
+      "explanation": "Zion Williamson 的画像主要由 罚球稳定性、终结效率 和 出勤稳定性 驱动；基础数据上场均 24.6 分、5.3 助攻、7.2 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "youngtr01",
+      "explanation": "Trae Young 的画像主要由 组织分球能力、控失误能力 和 终结效率 驱动；基础数据上场均 24.2 分、11.6 助攻、3.1 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    },
+    {
+      "player_id": "zubaciv01",
+      "explanation": "Ivica Zubac 的画像主要由 外线投射、前场冲抢能力 和 终结效率 驱动；基础数据上场均 16.8 分、2.7 助攻、12.6 篮板，说明该球员在当前样本中呈现出较明确的风格特征。"
+    }
+  ]
+}

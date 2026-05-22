@@ -1,9 +1,10 @@
 services:
   api:
     build:
-      context: ../backend/player-profiling-api
+      context: ..
+      dockerfile: backend/player-profiling-api/Dockerfile
     ports:
       - "8000:8000"
     environment:
       - APP_NAME=Player Profiling System
-      - DATA_MODE=mock-first
+      - DATA_MODE=real-first

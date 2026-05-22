@@ -31,7 +31,7 @@ def _configured_data_path() -> Optional[Path]:
 
 def _normalize_player(row: dict[str, Any]) -> Optional[dict[str, Any]]:
     try:
-        stats = row.get("stats") or {
+        raw_stats = row.get("stats") or {
             "points": row.get("points"),
             "assists": row.get("assists"),
             "rebounds": row.get("rebounds"),
@@ -40,16 +40,27 @@ def _normalize_player(row: dict[str, Any]) -> Optional[dict[str, Any]]:
         normalized = {
             "player_id": str(row["player_id"]),
             "season": int(row["season"]),
-            "stats": {
-                key: float(stats[key])
-                for key in REQUIRED_STATS
-            },
         }
+        stats = {
+            key: float(value)
+            for key, value in raw_stats.items()
+            if value is not None and value != ""
+        }
+        for key in REQUIRED_STATS:
+            if key not in stats:
+                raise KeyError(key)
+        normalized["stats"] = stats
 
         if row.get("name"):
             normalized["name"] = str(row["name"])
         if row.get("team"):
             normalized["team"] = str(row["team"])
+        if row.get("position"):
+            normalized["position"] = str(row["position"])
+        if row.get("style"):
+            normalized["style"] = str(row["style"])
+        if row.get("age"):
+            normalized["age"] = int(row["age"])
 
         return normalized
     except (KeyError, TypeError, ValueError):
@@ -107,3 +118,7 @@ def load_real_players() -> dict[str, dict[str, Any]]:
 
 def get_player_from_real_db(player_id: str):
     return load_real_players().get(player_id)
+
+
+def list_players_from_real_db():
+    return list(load_real_players().values())

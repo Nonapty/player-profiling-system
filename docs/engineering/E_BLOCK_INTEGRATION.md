@@ -13,6 +13,27 @@ E 块负责把 A/B/C/D 四个模块整合成可运行系统：
 ## 2. 当前工程骨架
 
 ```text
+data/raw/player_stats.sample.csv
+        |
+        v
+data/scripts/clean_players.py
+        |
+        v
+data/processed/players.json
+        |
+        v
+models/feature_engineering/build_features.py
+        |
+        v
+models/feature_engineering/feature_vectors.json
+        |
+        v
+models/ml_analytics/run_analysis.py
+        |
+        v
+models/ml_analytics/analytics_results.json
+        |
+        v
 frontend/player-profiling-dashboard
         |
         v
@@ -100,11 +121,18 @@ D 组前端目录：
 frontend/player-profiling-dashboard/
 ```
 
+当前前端已经由后端托管：
+
+```text
+http://127.0.0.1:8000/dashboard
+```
+
 前端优先使用聚合接口，减少多次请求：
 
 - `/api/v1/players/{player_id}/profile`
 - `/api/v1/players/{player_id}/dashboard`
-- `/api/v1/players/compare?player1=123&player2=456`
+- `/api/v1/players/compare?player1=curryst01&player2=gilgesh01`
+- `/api/v1/style-space`
 
 ## 4. 统一响应格式
 
@@ -124,9 +152,32 @@ frontend/player-profiling-dashboard/
 
 - 后端服务可以启动：`cd backend/player-profiling-api && uvicorn main:app --reload`
 - `/api/v1/health` 返回 `status=ok`
-- mock 球员 `123` 能返回完整 profile
-- mock 球员 `456` 能参与 compare
+- 真实球员 `curryst01` 能返回完整 dashboard
+- 真实球员 `curryst01` 与 `gilgesh01` 能参与 compare
 - 不存在的球员返回 404
 - 前端只依赖 `/api/v1` 下的接口
 - 新模型输出必须先更新 `docs/project/Data Contract Table.md`
-- 真实数据文件存在时，`/api/v1/health` 中 `data_source.active_source` 应为 `real`
+- 真实数据文件存在时，`/api/v1/health` 中 `data_source.real_players` 应为 `100`
+- 前端页面可以打开：`http://127.0.0.1:8000/dashboard`
+- smoke test 通过：`python3 tests/smoke_test.py`
+
+## 6. 当前展示版本
+
+当前展示版本包含：
+
+- 100 位真实 NBA 球员数据
+- 中文可视化 Dashboard
+- 能力雷达图
+- 近期趋势图
+- 风格空间散点图
+- 相似球员推荐
+- 模型贡献解释
+- 球员对比图
+- 左侧目录点击后能跳转并聚焦对应模块
+- 风格空间球员点可点击切换分析球员
+
+演示流程参考：
+
+```text
+docs/engineering/DEMO_GUIDE.md
+```

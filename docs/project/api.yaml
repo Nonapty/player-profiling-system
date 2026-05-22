@@ -7,10 +7,31 @@ info:
 servers:
   - url: /api/v1
 
-security:
-  - bearerAuth: []
-
 paths:
+
+  /health:
+    get:
+      tags: [System]
+      summary: 健康检查与数据源状态
+      responses:
+        "200":
+          description: success
+
+  /players:
+    get:
+      tags: [Player]
+      summary: 获取球员列表
+      responses:
+        "200":
+          description: success
+
+  /style-space:
+    get:
+      tags: [Visualization]
+      summary: 获取风格空间散点数据
+      responses:
+        "200":
+          description: success
 
   # =========================
   # Player Core Resource
@@ -42,6 +63,12 @@ paths:
     get:
       tags: [Model]
       summary: 获取球员特征向量
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           content:
@@ -53,6 +80,12 @@ paths:
     get:
       tags: [Model]
       summary: 获取球员嵌入向量（风格空间）
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           content:
@@ -67,6 +100,12 @@ paths:
     get:
       tags: [Model]
       summary: 获取球员风格聚类结果
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           content:
@@ -82,6 +121,11 @@ paths:
       tags: [Similarity]
       summary: 获取相似球员列表
       parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
         - name: top_k
           in: query
           schema:
@@ -101,6 +145,12 @@ paths:
     get:
       tags: [Trend]
       summary: 获取球员表现趋势
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           content:
@@ -115,6 +165,12 @@ paths:
     get:
       tags: [Explainability]
       summary: 获取评分可解释性分析
+      parameters:
+        - name: player_id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           content:
@@ -151,12 +207,6 @@ paths:
 # Components
 # =========================
 components:
-
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
 
   responses:
     NotFound:
@@ -292,7 +342,13 @@ components:
         similar_players:
           type: array
           items:
-            type: string
+            type: object
+            properties:
+              player_id: { type: string }
+              name: { type: string }
+              team: { type: string }
+              style: { type: string }
+              score: { type: number }
 
     ApiResponse_SimilarPlayers:
       allOf:
@@ -331,8 +387,15 @@ components:
       properties:
         player_id:
           type: string
-        explanation:
+        summary:
           type: string
+        contributions:
+          type: array
+          items:
+            type: object
+            properties:
+              feature: { type: string }
+              value: { type: number }
 
     ApiResponse_Explanation:
       allOf:
@@ -355,8 +418,11 @@ components:
         diff:
           type: object
           properties:
-            points: { type: number }
-            assists: { type: number }
+            Scoring: { type: number }
+            Playmaking: { type: number }
+            Rebounding: { type: number }
+            Defense: { type: number }
+            Shooting: { type: number }
 
     ApiResponse_Comparison:
       allOf:

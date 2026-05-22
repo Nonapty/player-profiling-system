@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>球星画像可视化</title>
+    <link rel="stylesheet" href="/static-dashboard/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="球员导航">
+        <div class="brand-block">
+          <div class="brand-mark">球</div>
+          <div>
+            <h1>球星画像系统</h1>
+            <p>表现 · 风格 · 对比</p>
+          </div>
+        </div>
+
+        <label class="field-label" for="playerSearch">分析球员</label>
+        <div class="combo" id="playerCombo">
+          <input id="playerSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入球员名、球队或位置">
+          <div id="playerOptions" class="combo-options" role="listbox"></div>
+        </div>
+
+        <label class="field-label" for="compareSearch">全局对比对象</label>
+        <div class="combo" id="compareCombo">
+          <input id="compareSearch" class="select-control combo-input" type="text" autocomplete="off" placeholder="输入对比球员">
+          <div id="compareOptions" class="combo-options" role="listbox"></div>
+        </div>
+
+        <nav class="nav-list" aria-label="页面区块">
+          <a href="#overview">总览</a>
+          <a href="#profile">能力画像</a>
+          <a href="#space">风格空间</a>
+          <a href="#explain">模型解释</a>
+          <a href="#comparePanel">球员对比</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard">
+        <section class="topbar" id="overview">
+          <div>
+            <p class="eyebrow">运动员表现画像</p>
+            <h2 id="playerName">加载中</h2>
+            <p id="playerMeta" class="muted">正在连接后端集成层</p>
+          </div>
+          <div class="score-gauge" id="scoreGauge">
+            <div class="score-inner">
+              <span>综合</span>
+              <strong id="scoreValue">--</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="metric-strip" aria-label="球员指标">
+          <div class="metric">
+            <span>得分</span>
+            <strong id="pointsMetric">--</strong>
+            <div class="metric-bar"><i id="pointsBar"></i></div>
+          </div>
+          <div class="metric">
+            <span>助攻</span>
+            <strong id="assistsMetric">--</strong>
+            <div class="metric-bar"><i id="assistsBar"></i></div>
+          </div>
+          <div class="metric">
+            <span>篮板</span>
+            <strong id="reboundsMetric">--</strong>
+            <div class="metric-bar"><i id="reboundsBar"></i></div>
+          </div>
+          <div class="metric">
+            <span>风格</span>
+            <strong id="styleMetric">--</strong>
+            <div class="style-chip" id="clusterMetric">--</div>
+          </div>
+        </section>
+
+        <section class="grid-main">
+          <article class="panel" id="profile">
+            <div class="panel-header">
+              <div>
+                <h3>能力雷达</h3>
+                <p>点击卡片查看分数标注；虚线为全局对比对象</p>
+              </div>
+              <span class="pill">五维</span>
+            </div>
+            <div id="radarChart" class="chart chart-radar"></div>
+          </article>
+
+          <article class="panel" id="trendPanel">
+            <div class="panel-header">
+              <div>
+                <h3>近期状态</h3>
+                <p>点击卡片查看每段数值；橙色虚线为对比趋势</p>
+              </div>
+              <span class="pill accent">趋势</span>
+            </div>
+            <div id="trendChart" class="chart"></div>
+          </article>
+
+          <article class="panel panel-large" id="space">
+            <div class="panel-header">
+              <div>
+                <h3>风格空间</h3>
+                <p>点击任意球员点可切换分析球员</p>
+              </div>
+              <span class="pill warm">聚类</span>
+            </div>
+            <div id="spaceChart" class="chart chart-space"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>相似球员</h3>
+                <p>百分比越高、连线越粗，相似度越高</p>
+              </div>
+            </div>
+            <div id="similarList" class="similar-list"></div>
+          </article>
+
+          <article class="panel" id="explain">
+            <div class="panel-header">
+              <div>
+                <h3>贡献解释</h3>
+                <p>展示影响画像判断的主要能力维度</p>
+              </div>
+            </div>
+            <div id="explainChart" class="bar-list"></div>
+          </article>
+
+          <article class="panel" id="comparePanel">
+            <div class="panel-header">
+              <div>
+                <h3>球员对比</h3>
+                <p id="compareTitle">指标差值</p>
+              </div>
+            </div>
+            <div id="compareChart" class="compare-list"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static-dashboard/app.js"></script>
+  </body>
+</html>

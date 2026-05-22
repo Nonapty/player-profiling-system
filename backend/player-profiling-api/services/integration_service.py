@@ -32,11 +32,15 @@ class IntegrationService:
                 "ml": "available",
                 "integration": "available"
             },
-            "data_source": DataSwitcher.get_data_status()
+            "data_source": DataSwitcher.get_data_status(),
+            "analytics_source": "pipeline" if ml_service._analytics_results() else "runtime"
         }
 
     def player(self, player_id: str):
         return self._get_valid_player(player_id)
+
+    def players(self):
+        return player_service.list_players()
 
     # =========================
     # 🧮 Feature
@@ -98,14 +102,22 @@ class IntegrationService:
     # 🔵 Dashboard（给前端用）
     # =========================
     def get_dashboard(self, player_id: str):
-        self._get_valid_player(player_id)
+        player = self._get_valid_player(player_id)
 
         return {
             "player_id": player_id,
+            "player": player,
+            "features": ml_service.get_features(player_id),
+            "embedding": ml_service.get_embedding(player_id),
+            "cluster": ml_service.get_cluster(player_id),
             "trend": ml_service.get_trend(player_id),
             "similarity": ml_service.get_similarity(player_id),
-            "explanation": ml_service.get_explanation(player_id)
+            "explanation": ml_service.get_explanation(player_id),
+            "style_space": ml_service.list_style_space()
         }
+
+    def style_space(self):
+        return ml_service.list_style_space()
 
     # =========================
     # 🔵 Compare

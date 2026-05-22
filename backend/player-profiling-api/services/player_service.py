@@ -11,3 +11,7 @@ def get_player(player_id: str):
         return None
 
     return result["data"]
+
+
+def list_players():
+    return DataSwitcher.list_players()["data"]
