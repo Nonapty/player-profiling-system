@@ -795,6 +795,15 @@ h1 {
   font-weight: 800;
 }
 
+.similar-node {
+  cursor: pointer;
+}
+
+.similar-node:hover circle {
+  stroke: var(--amber);
+  stroke-width: 4px;
+}
+
 .similar-row,
 .bar-row,
 .compare-row {

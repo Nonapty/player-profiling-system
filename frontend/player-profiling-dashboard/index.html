@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>球星画像可视化</title>
-    <link rel="stylesheet" href="/static-dashboard/styles.css?v=20260522-5">
+    <link rel="stylesheet" href="/static-dashboard/styles.css?v=20260523-1">
   </head>
   <body>
     <div class="app-shell">
@@ -38,7 +38,9 @@
         <nav class="nav-list" aria-label="页面区块">
           <a href="#overview">总览</a>
           <a href="#profile">能力画像</a>
+          <a href="#trendPanel">近期状态</a>
           <a href="#space">风格空间</a>
+          <a href="#similarPanel">相似球员</a>
           <a href="#explain">模型解释</a>
           <a href="#comparePanel">球员对比</a>
         </nav>
@@ -116,11 +118,11 @@
             <div id="spaceChart" class="chart chart-space"></div>
           </article>
 
-          <article class="panel">
+          <article class="panel" id="similarPanel">
             <div class="panel-header">
               <div>
                 <h3>相似球员</h3>
-                <p>百分比越高、连线越粗，相似度越高</p>
+                <p>百分比越高、连线越粗，相似度越高；点击节点切换球员</p>
               </div>
             </div>
             <div id="similarList" class="similar-list"></div>
@@ -149,6 +151,6 @@
       </main>
     </div>
 
-    <script src="/static-dashboard/app.js?v=20260522-5"></script>
+    <script src="/static-dashboard/app.js?v=20260523-1"></script>
   </body>
 </html>

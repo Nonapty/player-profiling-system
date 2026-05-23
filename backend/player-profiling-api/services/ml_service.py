@@ -139,6 +139,34 @@ def _distance(v1, v2):
     return math.sqrt(sum((a - b) ** 2 for a, b in zip(v1, v2)))
 
 
+def _raw_feature_vector(player_id):
+    feature = _feature_index().get(player_id)
+    if feature and feature.get("vector"):
+        return [float(value) for value in feature["vector"]]
+
+    return _feature_vector(player_id)
+
+
+def _cosine_similarity_score(player_id, other_id):
+    v1 = _raw_feature_vector(player_id)
+    v2 = _raw_feature_vector(other_id)
+    if not v1 or not v2:
+        return 0
+
+    length = min(len(v1), len(v2))
+    v1 = v1[:length]
+    v2 = v2[:length]
+    dot = sum(a * b for a, b in zip(v1, v2))
+    norm1 = math.sqrt(sum(a * a for a in v1))
+    norm2 = math.sqrt(sum(b * b for b in v2))
+    if not norm1 or not norm2:
+        return 0
+
+    cosine = dot / (norm1 * norm2)
+    normalized = (cosine + 1) / 2
+    return round(max(0, min(normalized, 1)), 3)
+
+
 def list_style_space():
     analytics_style_space = _analytics_section("style_space")
     if analytics_style_space:
@@ -279,10 +307,12 @@ def get_similarity(player_id, top_k=5):
         for index, item in enumerate(analytics_similarity["similar_players"][:top_k]):
             if isinstance(item, dict):
                 other_id = item["player_id"]
-                score = item.get("score", round(0.92 - index * 0.06, 2))
+                score = item.get("score")
             else:
                 other_id = item
-                score = round(0.92 - index * 0.06, 2)
+                score = None
+            if score is None:
+                score = _cosine_similarity_score(player_id, other_id)
             player = players.get(other_id, {"player_id": other_id})
             similar_items.append({
                 "player_id": other_id,
@@ -297,14 +327,12 @@ def get_similarity(player_id, top_k=5):
             "similar_players": similar_items
         }
 
-    target = _feature_vector(player_id)
     scored = []
     for player in player_service.list_players():
         other_id = player["player_id"]
         if other_id == player_id:
             continue
-        vector = _feature_vector(other_id)
-        similarity = max(0, 1 - _distance(target, vector) / math.sqrt(len(target)))
+        similarity = _cosine_similarity_score(player_id, other_id)
         scored.append({
             "player_id": other_id,
             "name": player.get("name", other_id),

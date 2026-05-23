@@ -527,14 +527,26 @@ function renderSimilar(similarity, player) {
         const y = cy + Math.sin(angle) * radius;
         const r = 18 + item.score * 8;
         return `
+        <g class="similar-node" data-player-id="${item.player_id}">
           <circle cx="${x}" cy="${y}" r="${r}" fill="rgba(25, 123, 122, 0.92)" stroke="#fff" stroke-width="3" />
           <text class="network-node" x="${x}" y="${y + 4}" text-anchor="middle">${item.name.split(" ").slice(-1)[0]}</text>
           <text class="network-score" x="${x}" y="${y + r + 13}" text-anchor="middle">${focused ? `#${index + 1} · ${Math.round(item.score * 100)}%` : `${Math.round(item.score * 100)}%`}</text>
           ${focused ? `<text class="network-team" x="${x}" y="${y + r + 29}" text-anchor="middle">${item.team || ""}</text>` : ""}
+        </g>
         `;
       }).join("")}
     </svg>
   `;
+
+  els.similarList.querySelectorAll(".similar-node").forEach((node) => {
+    node.addEventListener("click", (event) => {
+      event.stopPropagation();
+      selectedPlayerId = node.dataset.playerId;
+      syncCompareSelection();
+      setComboValues();
+      renderDashboard();
+    });
+  });
 }
 
 function renderExplanation(explanation) {
@@ -608,7 +620,11 @@ function clearFocusedPanel() {
 
 function focusPanel(panel) {
   if (!panel?.classList.contains("panel")) {
+    clearFocusedPanel();
     panel?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (currentDashboard && currentCompare) {
+      renderVisuals(currentDashboard, currentCompare, currentCompareDashboard);
+    }
     return;
   }
 
